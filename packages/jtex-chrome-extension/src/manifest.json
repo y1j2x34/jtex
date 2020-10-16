@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "jtex",
+    "version": "1.0",
+    "description": "",
+    "icons": {
+        "16": "assets/icon_16px.png",
+        "48": "assets/icon_48px.png",
+        "128": "assets/icon_128px.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "24": "assets/icon_24px.png",
+            "48": "assets/icon_48px.png"
+        },
+        "default_title": "javascript testing extension"
+    },
+    "content_scripts": [{
+        "all_frames": true,
+        "matches": [ "\u003Call_urls>" ],
+        "js": ["content-script.js"]
+    }],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "storage", "tabs", "downloads", "sessions", "activeTab", "\u003Call_urls>"
+    ],
+    "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'"
+}
