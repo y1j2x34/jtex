@@ -25,7 +25,7 @@
         "persistent": false
     },
     "permissions": [
-        "storage", "tabs", "downloads", "sessions", "activeTab", "\u003Call_urls>"
+        "storage", "tabs", "downloads", "sessions", "activeTab", "\u003Call_urls>", "system.cpu","system.memory","system.storage"
     ],
     "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'"
 }
