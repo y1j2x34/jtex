@@ -21,6 +21,7 @@ export default class ExtensionCommunicator {
             } else {
                 defer.resolve(msg.data);
             }
+            delete this.defers[msg.msgId];
         });
     }
     public async send<T = any>(data: any): Promise<T> {

@@ -24,7 +24,13 @@ function formatNumber(min: number, max: number, value: number = min) {
     return Math.min(max, Math.max(value, min));
 }
 
-export function capture(options: CaptureOption): Promise<Blob | string> {
+export interface ImageData {
+    width: number;
+    height: number;
+    data: Blob | string;
+}
+
+export function capture(options: CaptureOption): Promise<ImageData> {
     const { windowId, format = CaptureDataFormat.DATAURL } = options;
     return new Promise((resolve, reject) => {
         chrome.tabs.captureVisibleTab(windowId, { format: 'png' }, imageURL => {
@@ -45,14 +51,22 @@ export function capture(options: CaptureOption): Promise<Blob | string> {
                     case CaptureDataFormat.BLOB:
                         canvas.toBlob(it => {
                             if (it) {
-                                resolve(it);
+                                resolve({
+                                    width,
+                                    height,
+                                    data: it
+                                });
                             } else {
                                 reject(new Error('Failed to convert capture image to blob data!'));
                             }
                         }, 'image/png');
                         break;
                     case CaptureDataFormat.DATAURL:
-                        resolve(canvas.toDataURL('image/png'));
+                        resolve({
+                            width,
+                            height,
+                            data: canvas.toDataURL('image/png')
+                        });
                         break;
                 }
             };

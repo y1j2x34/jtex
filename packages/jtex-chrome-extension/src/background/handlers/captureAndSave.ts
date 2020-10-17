@@ -8,13 +8,13 @@ interface CaptureOption extends ActionOption {
 }
 
 export async function captureAndSave(options: CaptureOption) {
-    const imageBlob = await capture({
+    const imageData = await capture({
         ...options,
         format: CaptureDataFormat.BLOB
     });
     await download({
         ...options,
-        data: imageBlob,
+        data: imageData.data,
         filename: options.filename
     });
     return true;
