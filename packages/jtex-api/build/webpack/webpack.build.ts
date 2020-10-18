@@ -2,6 +2,7 @@ import baseConfig from './webpack.base';
 import path from 'path';
 import webpackMerge from 'webpack-merge';
 import pkg from '../../package.json';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 const srcDirectory = path.resolve(__dirname, '../../src');
 const distDirectory = path.resolve(__dirname, '../..', pkg.distDir);
@@ -22,7 +23,23 @@ export default webpackMerge(baseConfig, {
     },
     output: {
         filename: '[name].js',
-        path: distDirectory
+        path: distDirectory,
+        library: 'jtex',
+        libraryTarget: 'umd'
     },
-    mode: 'production'
+    mode: 'production',
+    plugins: [
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: 'package.json',
+                    to: distDirectory
+                },
+                {
+                    from: 'README.md',
+                    to: distDirectory
+                }
+            ]
+        })
+    ]
 });
