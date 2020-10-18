@@ -1,6 +1,9 @@
 {
   "name": "jtex",
   "private": true,
+  "scripts": {
+
+  },
   "devDependencies": {
     "lerna": "^3.22.1"
   }
