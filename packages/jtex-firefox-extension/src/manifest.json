@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "jtex",
+    "version": "1.0",
+    "description": "Javascript unit testing extension",
+    "icons": {
+        "16": "assets/icon_16px.png",
+        "24": "assets/icon_24px.png",
+        "48": "assets/icon_48px.png",
+        "128": "assets/icon_128px.png"
+    },
+    "content_scripts": [{
+        "all_frames": true,
+        "matches": [ "<all_urls>" ],
+        "js": ["content-script.js"]
+    }],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{e2c46ff3-d47f-0ccf-ab5e-bbb24bc8444f}"
+        }
+    },
+    "permissions": ["<all_urls>", "tabs", "webRequest"],
+    "content_security_policy": "script-src 'self'; object-src 'self'"
+}

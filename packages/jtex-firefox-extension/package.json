@@ -8,14 +8,13 @@
   "author": "y1j2x34 <y1j2x34@qq.com>",
   "homepage": "",
   "license": "MIT",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
+  "distDir": "dist",
   "scripts": {
+    "lint": " eslint {src,__tests__,build}/**/*.ts",
+    "format": "eslint {src,__tests__,build}/**/*.ts  --fix",
+    "start": "cross-env NODE_ENV=development TS_NODE_PROJECT=\"./build/tsconfig.json\" webpack --config ./build/webpack/webpack.dev.ts",
+    "build": "cross-env NODE_ENV=production TS_NODE_PROJECT=\"./build/tsconfig.json\" webpack --config ./build/webpack/webpack.build.ts",
+    "publish": "npm run build && npm publish",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "devDependencies": {
