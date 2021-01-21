@@ -2,7 +2,7 @@
   "name": "jtex",
   "private": true,
   "scripts": {
-
+    "postinstall": "lerna bootstrap --hoist"
   },
   "devDependencies": {
     "lerna": "^3.22.1"
