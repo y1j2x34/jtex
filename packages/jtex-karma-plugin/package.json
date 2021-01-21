@@ -1,5 +1,5 @@
 {
-  "name": "karma-plugin-jtex",
+  "name": "@jtex/karma-plugin",
   "version": "1.0.0",
   "description": "jtex karma plugin",
   "author": "y1j2x34 <y1j2x34@qq.com>",
