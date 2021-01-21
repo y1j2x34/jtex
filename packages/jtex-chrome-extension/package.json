@@ -1,5 +1,5 @@
 {
-  "name": "jtex-chrome-extension",
+  "name": "@jtex/chrome-extension",
   "version": "1.0.0",
   "description": "jtex chrome extension",
   "keywords": [
