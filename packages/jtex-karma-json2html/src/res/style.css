@@ -134,3 +134,6 @@
 .show-case-total-time {
     float: right;
 }
+.progress {
+    height: 2px;
+}

@@ -5,7 +5,8 @@
         "total-count": "所有数量",
         "success-count": "成功",
         "failed-count": "失败",
-        "skipped-count": "跳过"
+        "skipped-count": "跳过",
+        "search": "搜索"
     },
     "time": {
         "milliseconds": "毫秒",

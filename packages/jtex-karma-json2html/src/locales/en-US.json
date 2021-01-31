@@ -5,7 +5,8 @@
         "total-count": "Total",
         "success-count": "Success",
         "failed-count": "Failed",
-        "skipped-count": "Skipped"
+        "skipped-count": "Skipped",
+        "search": "Search"
     },
     "time": {
         "milliseconds": "ms",

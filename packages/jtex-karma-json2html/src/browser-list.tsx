@@ -7,7 +7,7 @@ export function generateBrowserList(options: ReportOptions): string {
     const t = translater(options);
     return (
         <div class="dropdown jtex--dropdown">
-            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">
+            <button class="btn btn-light dropdown-toggle" data-toggle="dropdown" type="button">
                 {t('header.browsers')}
             </button>
             <div class="dropdown-menu switch-browser-dropdown-menu">

@@ -3,12 +3,13 @@ import { generateBrowserList } from './browser-list';
 import { translater } from './utils/i18n';
 import { ReportOptions } from './ReportOptions';
 import { logoHtml } from './logo';
+import { searchHtml } from './search';
 
 export function navbar(options: ReportOptions) {
     const t = translater(options);
     return (
-        <nav class="navbar navbar-light">
-            <a class="navbar-brand">
+        <nav class="navbar navbar-dark bg-primary">
+            <a class="navbar-brand" href="javascript:;">
                 {logoHtml(options)}
                 {t(options.reportTitle)}
             </a>
