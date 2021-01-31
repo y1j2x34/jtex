@@ -23,7 +23,7 @@ export function navbar(options: ReportOptions) {
                     <i class="material-icons">view_list</i>: <span id="browser-total-count"></span>
                 </span>
                 <span class="badge badge-success" title={t('header.success-count')}>
-                    <i class="material-icons">done</i> <span id="browser-success-count"></span>
+                    <i class="material-icons">check_circle</i> <span id="browser-success-count"></span>
                 </span>
                 <span class="badge badge-danger" title={t('header.failed-count')}>
                     <i class="material-icons">error</i>

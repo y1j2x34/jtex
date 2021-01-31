@@ -80,7 +80,7 @@ function suiteCard(name: string, cases: SuiteResultInfo[], t: (key: string) => s
                                     {
                                         itemClass: 'case-success',
                                         alertClass: 'alert-success',
-                                        icon: 'done'
+                                        icon: 'check_circle'
                                     },
                                     t
                                 );
