@@ -1,0 +1,6 @@
+--module commonjs
+--resolveJsonModule
+--esModuleInterop
+-t ES5
+--skipLibCheck
+-w

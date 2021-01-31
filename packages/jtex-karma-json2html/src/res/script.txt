@@ -1,0 +1,55 @@
+var menus = document.querySelectorAll('.switch-browser-menu-item');
+
+var defaultBrowserId = karmaResults[0].browser.id;
+
+var defaultMenu = Array.from(menus).find(it => {
+    return it.getAttribute('menu-browser') === defaultBrowserId;
+});
+
+defaultMenu.classList.add('selected');
+var last = defaultMenu;
+
+menus.forEach(function (menu, i) {
+    var browserId = karmaResults[i].browser.id;
+    menu.onclick = function () {
+        last.classList.remove('selected');
+        menu.classList.add('selected');
+        last = menu;
+        updateUI(browserId);
+    };
+});
+
+var totalTimeElm = document.getElementById('browser-total-time');
+var totalCountElm = document.getElementById('browser-total-count');
+var successCountElm = document.getElementById('browser-success-count');
+var errorCountElm = document.getElementById('browser-error-count');
+var skippedCountElm = document.getElementById('browser-skipped-count');
+
+function updateUI(browserId) {
+    var browserResult = karmaResults.find(it => it.browser.id === browserId);
+    if (!browserResult) {
+        return;
+    }
+    karmaResults
+        .filter(it => it.browser.id !== browserId)
+        .forEach(function (result) {
+            var otherBrowserId = result.browser.id;
+            var elms = document.querySelectorAll('[data-browser="' + otherBrowserId + '"]');
+            elms.forEach(function (elm) {
+                elm.classList.add('hide-browser-result');
+            });
+        });
+
+    var elms = document.querySelectorAll('[data-browser="' + browserId + '"]');
+    elms.forEach(function (elm) {
+        elm.classList.remove('hide-browser-result');
+    });
+    var browserLastResult = browserResult.browser.lastResult;
+    totalTimeElm.innerText = browserLastResult.totalTime + 'ms';
+    totalCountElm.innerText = browserLastResult.total;
+    successCountElm.innerText = browserLastResult.success;
+    errorCountElm.innerText = browserLastResult.failed;
+    skippedCountElm.innerText = browserLastResult.skipped;
+}
+
+updateUI(defaultBrowserId);
