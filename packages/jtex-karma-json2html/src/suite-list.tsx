@@ -63,7 +63,7 @@ function suiteCard(name: string, cases: SuiteResultInfo[], t: (key: string) => s
                         {hasError ? (
                             <i class="material-icons text-danger">error</i>
                         ) : (
-                            <i class="material-icons text-success">check</i>
+                            <i class="material-icons text-success">check_circle</i>
                         )}
                         {name}
                         <span class="show-case-total-time">
