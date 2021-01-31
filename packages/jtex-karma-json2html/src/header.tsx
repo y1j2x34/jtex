@@ -8,7 +8,7 @@ export function generateHeader(options: ReportOptions) {
     return (
         <head>
             <meta charset="utf-8"></meta>
-            <title>{t('page.title')}</title>
+            <title>{t('page-title')}</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
             <link
                 rel="stylesheet"
