@@ -28,8 +28,8 @@
     color: var(--blue);
 }
 .suite-case-item {
-    border: 1px solid;
-    margin-bottom: 1rem;
+    /* border: 1px solid;
+    margin-bottom: 1rem; */
     position: relative;
 }
 .suite-case-item .alert {
