@@ -67,3 +67,27 @@ if (jumpToError) {
         }
     }
 }
+
+var form = $('#search-cases');
+form.on('submit', function () {
+    var keywords = form.serializeArray()[0].value.split(/\s+/);
+    console.info(keywords);
+    $('.suite-card-group .card').each(function (i, card) {
+        var items = $(card).find('.suite-case-item');
+        var matches = 0;
+        $(card).removeClass('jtex-search-not-match');
+        items.removeClass('jtex-search-not-match');
+        items.each(function (j, item) {
+            var desc = $(item).find('.suite-case-desc').text();
+            var found = keywords.some(it => desc.indexOf(it) > -1);
+            if (found) {
+                matches++;
+            } else {
+                $(item).addClass('jtex-search-not-match');
+            }
+        });
+        if (matches === 0) {
+            $(card).addClass('jtex-search-not-match');
+        }
+    });
+});

@@ -14,6 +14,7 @@ export function navbar(options: ReportOptions) {
                 {t(options.reportTitle)}
             </a>
             <div class="mr-auto">{generateBrowserList(options)}</div>
+            <div class="mr-auto">{searchHtml(options)}</div>
             <div class="test-summary">
                 <span class="badge badge-light">
                     <i class="material-icons">access_alarms</i> <span id="browser-total-time"></span>

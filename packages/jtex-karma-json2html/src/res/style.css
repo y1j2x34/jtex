@@ -137,3 +137,6 @@
 .progress {
     height: 2px;
 }
+.jtex-search-not-match {
+    display: none;
+}
