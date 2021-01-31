@@ -1,6 +1,17 @@
 {
     "page-title": "Test Result",
     "header": {
-        "browsers": "Browsers"
+        "browsers": "Browsers",
+        "total-count": "Total",
+        "success-count": "Success",
+        "failed-count": "Failed",
+        "skipped-count": "Skipped"
+    },
+    "time": {
+        "milliseconds": "ms",
+        "seconds": "s",
+        "minutes": "m",
+        "hours": "h",
+        "days": "d"
     }
 }

@@ -20,7 +20,7 @@
                     "success": 6,
                     "failed": 1,
                     "skipped": 0,
-                    "totalTime": 6,
+                    "totalTime": 60000003,
                     "netTime": 3,
                     "error": false,
                     "disconnected": false

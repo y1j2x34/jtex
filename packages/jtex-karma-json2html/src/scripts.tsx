@@ -1,8 +1,15 @@
 import * as elements from 'typed-html';
 import { ReportOptions } from './ReportOptions';
 import code from './res/script.txt';
+import { formatTime } from './utils/formatTime';
+import { translater } from './utils/i18n';
 
 export function scripts(options: ReportOptions) {
+    const t = translater(options);
+    options.data.browsers.forEach(it => {
+        const lastResult = it.browser.lastResult as any;
+        lastResult.totalTimeStr = formatTime(lastResult.totalTime, t);
+    });
     return [
         <script
             src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -20,7 +27,9 @@ export function scripts(options: ReportOptions) {
             crossorigin="anonymous"
         ></script>,
         <script>{`$(document).ready(function() { $('body').bootstrapMaterialDesign(); });`}</script>,
-        <script>var karmaResults = {JSON.stringify(options.data.browsers)};</script>,
+        <script>
+            var karmaResults = {JSON.stringify(options.data.browsers)}; var jumpToError = {options.jumpToError};
+        </script>,
         <script>{code}</script>
     ].join('');
 }

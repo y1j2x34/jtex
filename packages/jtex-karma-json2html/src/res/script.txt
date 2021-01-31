@@ -45,7 +45,7 @@ function updateUI(browserId) {
         elm.classList.remove('hide-browser-result');
     });
     var browserLastResult = browserResult.browser.lastResult;
-    totalTimeElm.innerText = browserLastResult.totalTime + 'ms';
+    totalTimeElm.innerText = browserLastResult.totalTimeStr;
     totalCountElm.innerText = browserLastResult.total;
     successCountElm.innerText = browserLastResult.success;
     errorCountElm.innerText = browserLastResult.failed;
@@ -53,3 +53,17 @@ function updateUI(browserId) {
 }
 
 updateUI(defaultBrowserId);
+
+if (jumpToError) {
+    var errorSuites = document.querySelectorAll('#has-error-suite');
+    if (errorSuites.length > 0) {
+        for (var i = 0; i < errorSuites.length; i++) {
+            var errorElm = errorSuites[i];
+            errorElm.id = errorElm.id + '-' + i;
+            if (errorElm.getClientRects().length > 0) {
+                location.hash = errorElm.id;
+                break;
+            }
+        }
+    }
+}

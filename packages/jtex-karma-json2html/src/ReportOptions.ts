@@ -13,4 +13,6 @@ export interface ReportOptions {
     reportTitle: string;
     forcusOnFailures: boolean;
     data: JSONReportData;
+    collapsed: boolean;
+    jumpToError: boolean;
 }

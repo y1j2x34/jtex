@@ -1,6 +1,17 @@
 {
     "page-title": "测试结果",
     "header": {
-        "browsers": "浏览器列表"
+        "browsers": "浏览器",
+        "total-count": "所有数量",
+        "success-count": "成功",
+        "failed-count": "失败",
+        "skipped-count": "跳过"
+    },
+    "time": {
+        "milliseconds": "毫秒",
+        "seconds": "秒",
+        "minutes": "分",
+        "hours": "小时",
+        "days": "天"
     }
 }

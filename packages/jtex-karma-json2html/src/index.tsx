@@ -22,6 +22,12 @@ export function html(opts: Partial<ReportOptions> & { data: JSONReportData }): s
     if (isNotDefined(opts.reportTitle)) {
         opts.reportTitle = opts.pageTitle;
     }
+    if (isNotDefined(opts.jumpToError)) {
+        opts.jumpToError = false;
+    }
+    if (isNotDefined(opts.collapsed)) {
+        opts.collapsed = false;
+    }
     opts.i18nResources = mergeI18nResources(opts.i18nResources);
     const options = opts as ReportOptions;
     return (

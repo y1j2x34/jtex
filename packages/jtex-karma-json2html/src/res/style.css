@@ -116,3 +116,18 @@
 .hide-browser-result {
     display: none;
 }
+.expand_more {
+    display: none;
+}
+.collapsed .expand_less {
+    display: none;
+}
+.collapsed .expand_more {
+    display: inline-block;
+}
+.suite-card-group .card-header {
+    cursor: pointer;
+}
+.show-case-total-time {
+    float: right;
+}
