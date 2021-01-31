@@ -99,7 +99,7 @@
     vertical-align: middle;
 }
 .test-summary>span>span {
-    padding-left: 0.6rem;
+    padding: 0 0.3rem;
 }
 .jtex--dropdown .dropdown-toggle {
     margin-bottom: 0;
