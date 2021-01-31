@@ -58,12 +58,12 @@ function suiteCard(name: string, cases: SuiteResultInfo[], t: (key: string) => s
                     aria-controls="collapseOne"
                 >
                     <h5 class="cart-title">
-                        <i class="material-icons expand_less">expand_less</i>
-                        <i class="material-icons expand_more">expand_more</i>
+                        <i class="material-icons expand_less align-middle">expand_less</i>
+                        <i class="material-icons expand_more align-middle">expand_more</i>
                         {hasError ? (
-                            <i class="material-icons text-danger">error</i>
+                            <i class="material-icons text-danger align-middle">error</i>
                         ) : (
-                            <i class="material-icons text-success">check_circle</i>
+                            <i class="material-icons text-success align-middle">check_circle</i>
                         )}
                         {name}
                         <span class="show-case-total-time">
