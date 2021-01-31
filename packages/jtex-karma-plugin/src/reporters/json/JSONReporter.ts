@@ -25,7 +25,7 @@ export class JSONReporter {
     constructor(
         baseReporterDecorator: (reporter: JSONReporter) => void,
         private formatError: (error: any) => string,
-        private config: JSONReporterConfig,
+        protected config: JSONReporterConfig,
         private helper: any,
         loggerFactory: any
     ) {
@@ -74,11 +74,14 @@ export class JSONReporter {
         return this.browsers[browserId];
     }
     writeReportData(outputData: JSONReportData) {
+        this.writeTextData(JSON.stringify(outputData));
+    }
+    writeTextData(text: string) {
         const output = this.config.output;
         if (typeof output === 'string') {
             const absolutePath = path.resolve(output);
             this.makeDir(absolutePath).then(() => {
-                fs.writeFile(absolutePath, JSON.stringify(outputData), err => {
+                fs.writeFile(absolutePath, text, err => {
                     if (err) {
                         this.log.warn(`Cannot write test results to file\n\t${err.message}\n\t${err.stack}`);
                     } else {
@@ -87,7 +90,7 @@ export class JSONReporter {
                 });
             });
         } else if (output instanceof Writable) {
-            output.write(JSON.stringify(outputData));
+            output.write(text);
         }
     }
     makeDir(absolutePath) {

@@ -67,6 +67,7 @@
   },
   "dependencies": {
     "@jtex/api": "1.0.0",
-    "@jtex/chrome-extension": "1.0.0"
+    "@jtex/chrome-extension": "1.0.0",
+    "@jtex/karma-json2html": "1.0.0"
   }
 }

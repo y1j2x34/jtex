@@ -1,6 +1,6 @@
 import karma from 'karma';
 const path = require('path');
-
+import reporters from './reporters';
 interface CustomLaunchers {
     [key: string]: karma.CustomLauncher;
 }
@@ -48,5 +48,6 @@ function initJtex(files: karma.FilePattern[], browsers: string[], customLauncher
 initJtex.$inject = ['config.files', 'config.browsers', 'config.customLaunchers', 'args'];
 
 export default {
-    'framework:jtex': ['factory', initJtex]
+    'framework:jtex': ['factory', initJtex],
+    ...reporters
 };
