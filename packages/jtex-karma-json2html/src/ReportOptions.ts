@@ -14,5 +14,6 @@ export interface ReportOptions {
     forcusOnFailures: boolean;
     data: JSONReportData;
     collapsed: boolean;
+    logoFile?: string;
     jumpToError: boolean;
 }

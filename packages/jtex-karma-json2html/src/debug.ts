@@ -8,7 +8,8 @@ const htmlStr = html({
     data: (json as unknown) as JSONReportData,
     collapsed: false,
     jumpToError: true,
-    lang: 'zh-CN'
+    lang: 'zh-CN',
+    logoFile: path.resolve(__dirname, '../src/res/logo.svg')
 });
 
 fs.writeFileSync(path.resolve(__dirname, '../temp/index.html'), htmlStr);
