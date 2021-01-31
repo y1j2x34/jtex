@@ -22,8 +22,8 @@ export function html(opts: Partial<ReportOptions> & { data: JSONReportData }): s
     if (isNotDefined(opts.reportTitle)) {
         opts.reportTitle = opts.pageTitle;
     }
-    if (isNotDefined(opts.jumpToError)) {
-        opts.jumpToError = false;
+    if (isNotDefined(opts.forcusOnFailures)) {
+        opts.forcusOnFailures = false;
     }
     if (isNotDefined(opts.collapsed)) {
         opts.collapsed = false;

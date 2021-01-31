@@ -15,5 +15,4 @@ export interface ReportOptions {
     data: JSONReportData;
     collapsed: boolean;
     logoFile?: string;
-    jumpToError: boolean;
 }

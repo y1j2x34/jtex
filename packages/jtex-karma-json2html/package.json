@@ -24,6 +24,7 @@
     "scripts": {
         "start": "concurrently \"npm run compile-rollup-config\" \"rollup -c rollup.config.js -w\"",
         "compile-rollup-config": "tsc @args.txt ./rollup.config.ts",
+        "build": "rollup -c rollup.config.js",
         "test": "echo \"Error: run tests from root\" && exit 1"
     },
     "bugs": {
