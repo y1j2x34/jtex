@@ -12,7 +12,7 @@ export function formatTime(time: number, t: (key: string) => string) {
     } else if (time < ONE_MINUTE) {
         const seconds = Math.floor(time / 1000);
         const mils = time - seconds * 1000;
-        return seconds + t('time.second') + (mils > 0 ? formatTime(mils, t) : '');
+        return seconds + t('time.seconds') + (mils > 0 ? formatTime(mils, t) : '');
     } else if (time < ONE_HOUR) {
         const minutes = Math.floor(time / ONE_MINUTE);
         const mils = time - minutes * ONE_MINUTE;
