@@ -1,6 +1,6 @@
 import { formatTime } from '../../src/utils/formatTime';
 
-describe('formatTime', () => {
+describe('utils/formatTime', () => {
     let mockTranslate: (key: string) => string;
     beforeEach(() => {
         mockTranslate = jest.fn().mockImplementation((key: string) => {
