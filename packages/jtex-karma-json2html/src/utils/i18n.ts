@@ -1,7 +1,7 @@
 import { I18NResource, ReportOptions } from '../ReportOptions';
 
 export function t(key: string, res: I18NResource, lng = 'en-US'): string {
-    const entries = res[lng];
+    const entries = res[lng] || res['en-US'];
     if (!entries) {
         return key;
     }
