@@ -1,6 +1,9 @@
 import karma from 'karma';
 const path = require('path');
 import reporters from './reporters';
+import { JSONReporterConfig } from './reporters/json/JSONReporter';
+import { HTMLReporterConfig } from './reporters/html/HTMLReporter';
+
 interface CustomLaunchers {
     [key: string]: karma.CustomLauncher;
 }
@@ -51,3 +54,14 @@ export default {
     'framework:jtex': ['factory', initJtex],
     ...reporters
 };
+
+export interface JtexReporterConfig {
+    html?: HTMLReporterConfig;
+    json?: JSONReporterConfig;
+}
+
+declare module 'karma' {
+    interface ConfigOptions {
+        readonly jtexReporter: JtexReporterConfig;
+    }
+}

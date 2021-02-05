@@ -12,6 +12,9 @@ export interface HTMLReporterConfig {
 }
 
 export class HTMLReporter extends JSONReporter {
+    static get $inject() {
+        return ['baseReporterDecorator', 'formatError', 'config.jtexReporter.html', 'helper', 'logger'];
+    }
     writeReportData(data: JSONReportData) {
         const config = this.config as HTMLReporterConfig;
         const htmlStr = html({
