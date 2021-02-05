@@ -1,10 +1,14 @@
 {
-  "name": "jtex",
+  "name": "@jtex/root",
   "private": true,
   "scripts": {
-    "postinstall": "lerna bootstrap --hoist"
+      "api": "yarn workspace @jtex/api",
+      "chrome-extension": "yarn workspace @jtex/chrome-extesion",
+      "karma-json2html": "yarn workspace @jtex/karma-json2html",
+      "karma-plugin": "yarn workspace @jtex/karma-plugin"
   },
   "devDependencies": {
     "lerna": "^3.22.1"
-  }
+  },
+  "workspaces": ["./packages/*"]
 }
