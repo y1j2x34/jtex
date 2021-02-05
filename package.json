@@ -5,11 +5,13 @@
     "api": "yarn workspace @jtex/api",
     "chrome-extension": "yarn workspace @jtex/chrome-extesion",
     "karma-json2html": "yarn workspace @jtex/karma-json2html",
-    "karma-plugin": "yarn workspace @jtex/karma-plugin"
+    "karma-plugin": "yarn workspace @jtex/karma-plugin",
+    "commit": "commit"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/prompt-cli": "^11.0.0",
     "husky": "^4.3.8",
     "lerna": "^3.22.1"
   },
@@ -17,8 +19,8 @@
     "./packages/*"
   ],
   "husky": {
-      "hooks": {
-          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-      }
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
