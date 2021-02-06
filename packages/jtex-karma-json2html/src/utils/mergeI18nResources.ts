@@ -9,7 +9,7 @@ export function mergeI18nResources(userI18nResources: I18NResource = {}): { [lan
     let result = userI18nResources ? JSON.parse(JSON.stringify(userI18nResources)) : {};
 
     result['en-US'] = mergeObject(enus, userI18nResources['en-US'] as I18NResource);
-    result['zh-CN'] = mergeObject(zhcn, userI18nResources['en-US'] as I18NResource);
+    result['zh-CN'] = mergeObject(zhcn, userI18nResources['zh-CN'] as I18NResource);
 
     return result;
 }
