@@ -1,7 +1,7 @@
 export interface AssertionError {
     name: string;
     message: string;
-    showDiff: true,
+    showDiff: true;
     actual: string;
     expected: string;
 }
