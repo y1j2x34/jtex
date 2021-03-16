@@ -3,7 +3,15 @@ import fs from 'fs';
 import { BrowserStats, JSONReportData } from '../../../../../common/jtex-karma-json-report-core';
 import { Writable } from 'stream';
 
-export * from '../../../../../common/jtex-karma-json-report-core';
+export {
+    JSONReportData,
+    AssertionError,
+    SuiteResultInfo,
+    BrowserLastResult,
+    BrowserInfo,
+    TestSummary,
+    BrowserStats
+} from '../../../../../common/jtex-karma-json-report-core';
 
 export interface JSONReporterConfig {
     output: string | Writable;
