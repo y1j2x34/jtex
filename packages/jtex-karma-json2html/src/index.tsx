@@ -13,8 +13,8 @@ export function html(opts: Partial<ReportOptions> & { data: JSONReportData }): s
     if (!opts.lang) {
         opts.lang = 'en-US';
     }
-    if (isNotDefined(opts.forcusOnFailures)) {
-        opts.forcusOnFailures = false;
+    if (isNotDefined(opts.focusOnFailures)) {
+        opts.focusOnFailures = false;
     }
     if (isNotDefined(opts.pageTitle)) {
         opts.pageTitle = 'page-title';
@@ -22,8 +22,8 @@ export function html(opts: Partial<ReportOptions> & { data: JSONReportData }): s
     if (isNotDefined(opts.reportTitle)) {
         opts.reportTitle = opts.pageTitle;
     }
-    if (isNotDefined(opts.forcusOnFailures)) {
-        opts.forcusOnFailures = false;
+    if (isNotDefined(opts.focusOnFailures)) {
+        opts.focusOnFailures = false;
     }
     if (isNotDefined(opts.collapsed)) {
         opts.collapsed = false;

@@ -11,7 +11,7 @@ export interface ReportOptions {
     };
     pageTitle: string;
     reportTitle: string;
-    forcusOnFailures: boolean;
+    focusOnFailures: boolean;
     data: JSONReportData;
     collapsed: boolean;
     logoFile?: string;

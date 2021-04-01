@@ -6,7 +6,7 @@ export interface HTMLReporterConfig {
     output: string | Writable;
     pageTitle: string;
     reportTitle: string;
-    forcusOnFailures: boolean;
+    focusOnFailures: boolean;
     collapsed: boolean;
     logoFile?: string;
 }

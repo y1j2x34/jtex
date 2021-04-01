@@ -28,7 +28,7 @@ export function scripts(options: ReportOptions) {
         ></script>,
         <script>{`$(document).ready(function() { $('body').bootstrapMaterialDesign(); });`}</script>,
         <script>
-            var karmaResults = {JSON.stringify(options.data.browsers)}; var forcusOnFailures={options.forcusOnFailures};
+            var karmaResults = {JSON.stringify(options.data.browsers)}; var forcusOnFailures={options.focusOnFailures};
         </script>,
         <script>{code}</script>
     ].join('');
