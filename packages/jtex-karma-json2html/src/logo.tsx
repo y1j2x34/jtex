@@ -6,7 +6,6 @@ export function logoHtml(options: ReportOptions) {
     if (!options.logoFile) {
         return '';
     }
-    console.info(options.logoFile);
     if (!fs.existsSync(options.logoFile)) {
         return (
             <i class="material-icons align-top" style="width:30px;height:30px;font-size:30px">
