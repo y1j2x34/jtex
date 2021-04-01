@@ -1,7 +1,7 @@
 export interface AssertionError {
     name: string;
     message: string;
-    showDiff: true;
+    showDiff: boolean;
     actual: string;
     expected: string;
 }
@@ -26,7 +26,7 @@ export interface BrowserLastResult {
     skipped: number;
     totalTime: number;
     netTime: number;
-    error: false;
+    error: boolean;
 }
 
 export interface BrowserInfo {
