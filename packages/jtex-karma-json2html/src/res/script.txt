@@ -54,7 +54,7 @@ function updateUI(browserId) {
 
 updateUI(defaultBrowserId);
 
-if (forcusOnFailures) {
+if (focusOnFailures) {
     var errorSuites = document.querySelectorAll('#has-error-suite');
     if (errorSuites.length > 0) {
         for (var i = 0; i < errorSuites.length; i++) {
