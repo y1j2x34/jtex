@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render header correctly 1`] = `
+"<head><meta charset=\\"utf-8\\">
+<title>Test Result</title>
+<meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\">
+<link rel=\\"stylesheet\\" href=\\"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons\\">
+<link rel=\\"stylesheet\\" href=\\"https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css\\" integrity=\\"sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX\\" crossorigin=\\"anonymous\\">
+<style>.material-icons {
+    font-size: 16px;
+}
+.suite-list .alert {
+    display: flex;
+    align-items: center;
+    padding: 0.75em 0.8em;
+}
+.suite-list .suite-case-desc {
+    margin-left: 1em;
+}
+.suite-list .suite-case-time {
+    margin-left: auto;
+}
+.suite-case-assertion-error > * {
+    display: block;
+}
+.suite-case-assertion-error-message:before,
+.suite-case-assertion-error-actual:before {
+    content: '-';
+    color:var(--red);
+}
+.suite-case-assertion-error-actual {
+    color: red;
+}
+.suite-case-assertion-error-expected:before {
+    content: '+';
+    color: var(--blue);
+}
+.suite-case-item {
+    /* border: 1px solid;
+    margin-bottom: 1rem; */
+    position: relative;
+}
+.suite-case-item .alert {
+    margin: 0;
+}
+.suite-case-item.case-success {
+    border-color: var(--success)
+}
+.suite-case-item.case-skipped {
+    border-color: var(--dark)
+}
+.suite-case-item.case-pending {
+    border-color: var(--secondary)
+}
+.suite-case-item.case-error {
+    border-color: var(--danger)
+}
+.suite-case-item:before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -1.25rem;
+    margin-left: -3px;
+}
+.suite-case-item.case-success:before {
+    background-color: var(--success)
+}
+.suite-case-item.case-skipped:before {
+    background-color: var(--dark)
+}
+.suite-case-item.case-pending:before {
+    background-color: var(--secondary)
+}
+.suite-case-item.case-error:before {
+    background-color: var(--danger)
+}
+
+.suite-case-item.case-error .alert {
+    border-bottom: 1px solid var(--danger);
+}
+.suite-case-log,
+.suite-case-assertion-error
+{
+    padding: 0 1rem;
+    font-size: 0.2rem;
+    background-color: #ffddd3;
+    color: var(--pink);
+    margin: 0;
+    border-bottom: 1px solid white;
+}
+.suite-case-log {
+    padding-top: 0.8rem;
+}
+.suite-case-log+.suite-case-log {
+    padding-top: 0;
+}
+.suite-case-assertion-error {
+    padding-top: 0.8rem;
+}
+.suite-card-group .card{
+    margin: 1rem;
+}
+.test-summary>span>i,.test-summary>span>span {
+    vertical-align: middle;
+}
+.test-summary>span>span {
+    padding: 0 0.3rem;
+}
+.jtex--dropdown .dropdown-toggle {
+    margin-bottom: 0;
+}
+.switch-browser-dropdown-menu .switch-browser-menu-item {
+    max-width: 30rem;
+    flex-wrap: nowrap;
+    padding: 0.8rem 1rem;
+}
+.switch-browser-menu-item .material-icons {
+    visibility: hidden;
+    padding-right: 0.6rem;
+}
+.switch-browser-menu-item.selected .material-icons {
+    visibility: visible;
+}
+.hide-browser-result {
+    display: none;
+}
+.expand_more {
+    display: none;
+}
+.collapsed .expand_less {
+    display: none;
+}
+.collapsed .expand_more {
+    display: inline-block;
+}
+.suite-card-group .card-header {
+    cursor: pointer;
+}
+.show-case-total-time {
+    float: right;
+}
+.progress {
+    height: 2px;
+}
+.jtex-search-not-match {
+    display: none;
+}
+</style></head>"
+`;

@@ -287,6 +287,36 @@
                     "assertionErrors": [],
                     "startTime": 1611677505997,
                     "endTime": 1611677505997
+                },
+                {
+                    "id": "",
+                    "description": "test3 parallel is Working",
+                    "suite": [
+                        "test3"
+                    ],
+                    "success": false,
+                    "skipped": true,
+                    "pending": false,
+                    "time": 0,
+                    "log": [],
+                    "assertionErrors": [],
+                    "startTime": 1611677505997,
+                    "endTime": 1611677505997
+                },
+                {
+                    "id": "",
+                    "description": "test4 parallel is Working",
+                    "suite": [
+                        "test4"
+                    ],
+                    "success": false,
+                    "skipped": false,
+                    "pending": true,
+                    "time": 0,
+                    "log": [],
+                    "assertionErrors": [],
+                    "startTime": 1611677505997,
+                    "endTime": 1611677505997
                 }
             ]
         }

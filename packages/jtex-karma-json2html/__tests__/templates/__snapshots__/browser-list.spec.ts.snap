@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render browser list correctly 1`] = `
+"<div class=\\"dropdown jtex--dropdown\\"><button class=\\"btn btn-light dropdown-toggle\\" data-toggle=\\"dropdown\\" type=\\"button\\">Browsers</button>
+<div class=\\"dropdown-menu switch-browser-dropdown-menu\\"><a class=\\"dropdown-item switch-browser-menu-item\\" href=\\"javascript:;\\" menu-browser=\\"82275798\\"><i class=\\"material-icons text-primary\\">check</i>
+ 
+HeadlessChrome 87.0.4280 (Linux 0.0.0)</a>
+<a class=\\"dropdown-item switch-browser-menu-item\\" href=\\"javascript:;\\" menu-browser=\\"82275790\\"><i class=\\"material-icons text-primary\\">check</i>
+ 
+Chrome 87.0.4280 (Linux 0.0.0)</a></div></div>"
+`;

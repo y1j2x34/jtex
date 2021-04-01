@@ -1,0 +1,429 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`complete html should render correctly 1`] = `
+"<html><head><meta charset=\\"utf-8\\">
+<title>Test Result</title>
+<meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\">
+<link rel=\\"stylesheet\\" href=\\"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons\\">
+<link rel=\\"stylesheet\\" href=\\"https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css\\" integrity=\\"sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX\\" crossorigin=\\"anonymous\\">
+<style>.material-icons {
+    font-size: 16px;
+}
+.suite-list .alert {
+    display: flex;
+    align-items: center;
+    padding: 0.75em 0.8em;
+}
+.suite-list .suite-case-desc {
+    margin-left: 1em;
+}
+.suite-list .suite-case-time {
+    margin-left: auto;
+}
+.suite-case-assertion-error > * {
+    display: block;
+}
+.suite-case-assertion-error-message:before,
+.suite-case-assertion-error-actual:before {
+    content: '-';
+    color:var(--red);
+}
+.suite-case-assertion-error-actual {
+    color: red;
+}
+.suite-case-assertion-error-expected:before {
+    content: '+';
+    color: var(--blue);
+}
+.suite-case-item {
+    /* border: 1px solid;
+    margin-bottom: 1rem; */
+    position: relative;
+}
+.suite-case-item .alert {
+    margin: 0;
+}
+.suite-case-item.case-success {
+    border-color: var(--success)
+}
+.suite-case-item.case-skipped {
+    border-color: var(--dark)
+}
+.suite-case-item.case-pending {
+    border-color: var(--secondary)
+}
+.suite-case-item.case-error {
+    border-color: var(--danger)
+}
+.suite-case-item:before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -1.25rem;
+    margin-left: -3px;
+}
+.suite-case-item.case-success:before {
+    background-color: var(--success)
+}
+.suite-case-item.case-skipped:before {
+    background-color: var(--dark)
+}
+.suite-case-item.case-pending:before {
+    background-color: var(--secondary)
+}
+.suite-case-item.case-error:before {
+    background-color: var(--danger)
+}
+
+.suite-case-item.case-error .alert {
+    border-bottom: 1px solid var(--danger);
+}
+.suite-case-log,
+.suite-case-assertion-error
+{
+    padding: 0 1rem;
+    font-size: 0.2rem;
+    background-color: #ffddd3;
+    color: var(--pink);
+    margin: 0;
+    border-bottom: 1px solid white;
+}
+.suite-case-log {
+    padding-top: 0.8rem;
+}
+.suite-case-log+.suite-case-log {
+    padding-top: 0;
+}
+.suite-case-assertion-error {
+    padding-top: 0.8rem;
+}
+.suite-card-group .card{
+    margin: 1rem;
+}
+.test-summary>span>i,.test-summary>span>span {
+    vertical-align: middle;
+}
+.test-summary>span>span {
+    padding: 0 0.3rem;
+}
+.jtex--dropdown .dropdown-toggle {
+    margin-bottom: 0;
+}
+.switch-browser-dropdown-menu .switch-browser-menu-item {
+    max-width: 30rem;
+    flex-wrap: nowrap;
+    padding: 0.8rem 1rem;
+}
+.switch-browser-menu-item .material-icons {
+    visibility: hidden;
+    padding-right: 0.6rem;
+}
+.switch-browser-menu-item.selected .material-icons {
+    visibility: visible;
+}
+.hide-browser-result {
+    display: none;
+}
+.expand_more {
+    display: none;
+}
+.collapsed .expand_less {
+    display: none;
+}
+.collapsed .expand_more {
+    display: inline-block;
+}
+.suite-card-group .card-header {
+    cursor: pointer;
+}
+.show-case-total-time {
+    float: right;
+}
+.progress {
+    height: 2px;
+}
+.jtex-search-not-match {
+    display: none;
+}
+</style></head>
+<body><nav class=\\"navbar navbar-dark bg-primary\\"><a class=\\"navbar-brand\\" href=\\"javascript:;\\"><object data=\\"data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OTcgNDk3IiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDQ5NyA0OTciIHdpZHRoPSI1MTIiCiAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgPGc+CiAgICAgICAgPHBhdGggZD0ibTE2OC4zNTMgMjY1LjEwOXY1My4wMzFsNDcuOTE5LTMzLjkzMnoiIGZpbGw9IiNkMTYxNjEiLz4KICAgICAgICA8cGF0aCBkPSJtMjk1LjUyOSAzMDUuMjQ4IDEwOS43NzIgMTQwLjcwM2M5LjIyMyAxMS44NTMgMjEuOTQyIDE1LjU1NSAzNC4zNDIgMTUuNTU1aDYuMzQzbC05MC4zMDUtMTY4LjE0OXoiIGZpbGw9IiNkMTYxNjEiLz4KICAgICAgICA8cGF0aCBkPSJtMzc0LjY2NiAyNzguNTk3YzQ0LjIxOSA3OC4xNDMgMTE5LjU4NyAyMTEuMzMzIDExOS41ODcgMjExLjMzMyAxLjc4NyAzLjE1OC0uNDk0IDcuMDctNC4xMjMgNy4wNy0xMi4zNDkgMC0yNC43NjMtNi4yNDUtMzMuMjE2LTE5LjAybC0xMTEuMjQtMTY3LjY4OHoiIGZpbGw9IiNkOTdiN2IiLz4KICAgICAgICA8cGF0aCBkPSJtOTguOTg2IDBjNDguNDU2IDAgOTkuNDA1IDM0LjQ2IDExNi43MzQgMTAyLjUgOTEuNTgzIDY0LjggMTA3LjgyMiA4NS43NTMgMTMxLjUwOCAxMjcuNjEgNS4xNyA5LjEzNyAxNS4wODkgMjYuNjY1IDI3LjQzOCA0OC40ODdsLTI0NS4yOS0zMy43MmMtMjIuMzE2LTI4LjMzMi0yNi42NDEtNzcuMDQtMjYuNjQxLTEzMC43MTQgMCAwLTU0LjQ2Ny03My4xOTItNjUuNDkzLTg0LjE2My0xMC45MjItMTAuODY3LTEuMzUzLTI5Ljk4MyAxMi4yNDctMjkuOTgzIDE0LjYwMiAwIDQxLjAyMy0uMDE3IDQ5LjQ5Ny0uMDE3eiIgZmlsbD0iI2Q5N2I3YiIvPgogICAgICAgIDxwYXRoIGQ9Im0xNDkuMzc2IDIyNC44NzZjLTI3LjU0MS0yNy41NDEtMzkuMjg2LTYwLjA0Ny0zOS4yODYtMTEzLjcyMSAwLTQuODc0LS4wMTgtMTIuNjc0LS4wMTgtMTIuNjc0cy01Ny44MDQtNTcuNTExLTY4LjgzLTY4LjQ4MWMtMTAuOTIyLTEwLjg2Ny01LjM0OC0yOS42MzEgOC4yNDctMjkuOTgzLTE2Ljc1Mi4yMDctMzAuMjY4IDEzLjg0Mi0zMC4yNjggMzAuNjQzbDY1LjU4IDEwNi42MDFjMCA0Mi4wMjYgMTcuMDM0IDgwLjA3NCA0NC41NzUgMTA3LjYxNWw2Mi42MjQgOC42MDljLTE3LjM3Ny04LjE2NC0zMS42ODQtMTcuNjY4LTQyLjYyNC0yOC42MDl6IiBmaWxsPSIjZDE2MTYxIi8+CiAgICAgICAgPHBhdGggZD0ibTIxNi44NDggMjczLjU0NGMzOC42NTUtMTMuOTUyIDYyLjM0LTUzLjQzMiA2Mi4zNC04MC4yMzMtMjkuODI2LTIxLjA3OS01MC41NDMtMzQuNjY3LTc3LjE1My0zNC42NjcgMCAwLTIzLjc2MSAwLTM2Ljk0IDAtMTguNTQyIDAtMzQuNzQxIDkuOTk3LTQzLjUyNyAyNC44OSA2LjM1OSAxNS43MzMgMTUuNTAzIDM5LjAzOCAyNy44MDkgNTEuMzQzIDE1Ljc4MSAxNS43ODEgMzguNTU3IDI4LjU3OCA2Ny40NzEgMzguNjY3eiIgZmlsbD0iI2U3YWZhZiIvPgogICAgICAgIDxwYXRoIGQ9Im0xNDkuMzc2IDIyNC44NzZjLTEyLjMwNi0xMi4zMDUtMjEuNDQ5LTI1LjYxLTI3LjgwOS00MS4zNDMtNC40MzQgNy41MTQtNi45ODYgMTYuMjY5LTYuOTg2IDI1LjYyNCAwIDEzLjk0OSA1LjY1NCAyNi41NzggMTQuNzk1IDM1LjcxOSAxMC4xNjYgMTAuMTY2IDIzLjIzNyAxOS4wOTIgMzguOTc5IDI2Ljg1NiAxNy45MTUgMCA0OC40OTMgNi44NjQgNDguNDkzLTguMTg4LTI4LjkxNC0xMC4wODktNTEuNjktMjIuODg2LTY3LjQ3Mi0zOC42Njh6IiBmaWxsPSIjZDk3YjdiIi8+CiAgICAgICAgPHBhdGggZD0ibTIxNi44NDggMjYzLjU0NGMyMy40NzcgOC4xOTIgNTEuMDA0IDI0LjU5NyA4Mi4xMjEgMjkuMzY0IDIyLjQ0OS0xMi42ODMgMzUuNzAzLTQyLjI3OCAzNS43MDMtNjAuMzg3bC01NS40ODQtMzkuMjExYy0uMDAxIDI2LjgwMi0yMy42ODUgNTYuMjgyLTYyLjM0IDcwLjIzNHoiIGZpbGw9IiNmOGU4ODMiLz4KICAgICAgICA8cGF0aCBkPSJtMjE2Ljg0OCAyNjMuNTQ0Yy0xNC4yNzEgNS4xNS0zMC41NzggOC4xODgtNDguNDkzIDguMTg4IDIwLjc4NSAxMC4yNTEgNDYuMjM1IDE4LjQ3MSA3NS44MiAyNC44MyAyMS40NjUtLjAwMiA1NC43OTQgMCA1NC43OTQtMTMuNjU0LTMxLjExOC00Ljc2Ny01OC42NDUtMTEuMTcyLTgyLjEyMS0xOS4zNjR6IiBmaWxsPSIjZWVjMDZiIi8+CiAgICAgICAgPHBhdGggZD0ibTI5OC45NjkgMjgyLjkwOGMzOS44MDYgMTUuMzc1IDc2LjYyNSA4LjgyNiAxMjEuNDIgMTAuMTg5bC04NS43MTctNjAuNTc2YzAgMTguMTA5LTEzLjI1NCAzNy43MDUtMzUuNzAzIDUwLjM4N3oiIGZpbGw9IiM4MGI2ZmMiLz4KICAgICAgICA8cGF0aCBkPSJtNDMwLjE4NyAzMDAuMDIyLTkuNzk5LTYuOTI1Yy00NC43OTUtMS4zNjQtODUuNS00LjY4Ni0xMjEuNDItMTAuMTg5LTE0LjY5OCA4LjMwNC0zMy4zMjkgMTMuNjUyLTU0Ljc5NCAxMy42NTQgNDkuNjgxIDEwLjY3OSAxMTEuMDIzIDE2LjExMiAxODEuNTY0IDE3LjA5NiA3LjM3Ni4xMDMgMTAuNDczLTkuMzc4IDQuNDQ5LTEzLjYzNnoiIGZpbGw9IiM1YTg2Y2MiLz4KICAgICAgICA8cGF0aCBkPSJtNjIuMzI0IDczLjc2NGMtMTIuNTQ5IDAtMjEuMjE4IDQuNjY3LTI1Ljk0MSAxMS4yMDkgMCAwLTEuNzM3IDExLjg2OSAyLjE2NCAxNy4wNDggMjIuODc1IDMwLjM2NiA1MS43MjMgMTcuNzYgNTIuMTI3IDE3Ljc1Mi45OTQtMTkuNDg5LTguNTU2LTQ2LjAwOS0yOC4zNS00Ni4wMDl6IiBmaWxsPSIjOGM4MThmIi8+CiAgICAgICAgPHBhdGggZD0ibTQxLjA4NiA5NC4wODhjLTEuNDYzLTIuMTY0LTMuMTQyLTUuMjgyLTQuNzAzLTkuMTE1LTUuNjAxIDcuNzU4LTUuNjQ3IDE4LjE1Ni4wNDIgMjYuNTczIDEwLjQ4NiAxNS41MTUgMjguMjM5IDI1LjcxNSA0OC4zNzYgMjUuNzE1IDMuNTM5LTMuNDk5IDUuNDg5LTkuOTcyIDUuODczLTE3LjQ4OS0uNDA0LjAwOC0uODA2LjAzMS0xLjIxMi4wMzEtMjAuMTM3IDAtMzcuODktMTAuMi00OC4zNzYtMjUuNzE1eiIgZmlsbD0iIzY1NWU2NyIvPgogICAgICAgIDxwYXRoIGQ9Im0xNDIuODI0IDg1LjA1Yy4yMS0yLjAxNy4zMjItNC4wNjMuMzIyLTYuMTM1IDAtMzIuMjU1LTI2LjYxNy00OC45MTUtNDkuMDU3LTQ4LjkxNS0xNy41NDMgMC0zMS43NjUgMTQuMjIxLTMxLjc2NSAzMS43NjR2MTJjMTIuMTQ4IDEyLjE0OCAxOS4yIDI0Ljg3OCAyMS41NjggNDUuNzc2IDEuODMzLjE3MyAzLjY5IDEwLjI2MyA1LjU2OSAxMC4yNjMgMjMuODI1IDAgNDQuMy0yNC4yODYgNTMuMzYzLTQ0Ljc1M3oiIGZpbGw9IiNmZWZhZTMiLz4KICAgICAgICA8cGF0aCBkPSJtODkuNDYyIDExOS44MDNjLTEuODc5IDAtMy43MzYtLjA4OS01LjU2OS0uMjYzLjYwNCA1LjMzNS45MDggMTEuMTkzLjkwOCAxNy43MjEgMzAuMTUxIDAgNTQuOTU2LTIyLjg3MiA1OC4wMjMtNTIuMjExLTkuMDYzIDIwLjQ2Ny0yOS41MzggMzQuNzUzLTUzLjM2MiAzNC43NTN6IiBmaWxsPSIjZmFmMGIwIi8+CiAgICAgICAgPHBhdGggZD0ibTYyLjMyNCA3My43NjRjLTE1LjI0OS0xNS4yNS00My4xMDMtNDMuMTA0LTQzLjEwMy00My4xMDQtOS40MzggMTMuMTczLTIyLjgwMSA2Ni41MDcgMTQuMzYyIDkwLjExOCAzLjUzNS0yMy43NDEgMTMuNDcxLTM2LjEzMyAyOC43NDEtNDcuMDE0eiIgZmlsbD0iI2ZlZmFlMyIvPgogICAgICAgIDxwYXRoIGQ9Im0zMi4yNTcgMTM1Ljc3MmMuMjAxLTUuNDYzLjY0OC0xMC40MzcgMS4zMjYtMTQuOTk0LTI4LjcwOC0zNS4xMy0yMS41MDYtNzcuNTYtMTQuMzYyLTkwLjExOC0xMC43MDggMTMuNjI1LTE3LjA5NSAzMC44MDctMTcuMDk1IDQ5LjQ4MSAwIDIyLjczMyA5LjQ2NSA0My4yNTYgMjQuNjcxIDU3Ljg0MiAyLjAxNyAxLjkzNCA1LjM1Ny41ODMgNS40Ni0yLjIxMXoiIGZpbGw9IiNmYWYwYjAiLz4KICAgICAgICA8ZyBmaWxsPSIjNjU1ZTY3Ij4KICAgICAgICAgICAgPHBhdGggZD0ibTk5LjY1MSA4Mi45NmMtNC4xNDMgMC03LjUtMy4zNTgtNy41LTcuNXYtMTUuNDhjMC00LjE0MiAzLjM1Ny03LjUgNy41LTcuNXM3LjUgMy4zNTggNy41IDcuNXYxNS40OGMwIDQuMTQyLTMuMzU3IDcuNS03LjUgNy41eiIvPgogICAgICAgICAgICA8cGF0aCBkPSJtMTk1Ljk4OCAzNTYuMDE1Yy0yLjkyOSAyLjkyOS03LjY3OCAyLjkyOC0xMC42MDYtLjAwMS0yLjkyOS0yLjkyOS0yLjkyOS03LjY3OC4wMDEtMTAuNjA2IDIuMTg3LTIuMTg2IDMuMzkxLTUuMDk0IDMuMzkxLTguMTg4IDAtNi4zODUtNS4xOTQtMTEuNTgtMTEuNTc5LTExLjU4aC0zMGMtNi4zODYgMC0xMS41OCA1LjE5NS0xMS41OCAxMS41OCAwIDMuMDk0IDEuMjA0IDYuMDAxIDMuMzkxIDguMTg4IDIuOTMgMi45MjkgMi45MyA3LjY3OC4wMDEgMTAuNjA2LTIuOTMgMi45My03LjY3NyAyLjkzLTEwLjYwNi4wMDEtNS4wMjEtNS4wMi03Ljc4NS0xMS42OTQtNy43ODUtMTguNzk1IDAtMTQuNjU2IDExLjkyNC0yNi41OCAyNi41OC0yNi41OGgzMGMxNC42NTYgMCAyNi41NzkgMTEuOTI0IDI2LjU3OSAyNi41OC0uMDAyIDcuMTAxLTIuNzY2IDEzLjc3Ni03Ljc4NyAxOC43OTV6Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K\\" type=\\"image/svg+xml\\" style=\\"width:30px;height:30px\\" class=\\"d-inline-block align-top\\"></object>
+</a>
+<div class=\\"mr-auto\\"><div class=\\"dropdown jtex--dropdown\\"><button class=\\"btn btn-light dropdown-toggle\\" data-toggle=\\"dropdown\\" type=\\"button\\">Browsers</button>
+<div class=\\"dropdown-menu switch-browser-dropdown-menu\\"><a class=\\"dropdown-item switch-browser-menu-item\\" href=\\"javascript:;\\" menu-browser=\\"82275798\\"><i class=\\"material-icons text-primary\\">check</i>
+ 
+HeadlessChrome 87.0.4280 (Linux 0.0.0)</a>
+<a class=\\"dropdown-item switch-browser-menu-item\\" href=\\"javascript:;\\" menu-browser=\\"82275790\\"><i class=\\"material-icons text-primary\\">check</i>
+ 
+Chrome 87.0.4280 (Linux 0.0.0)</a></div></div></div>
+<div class=\\"mr-auto\\"><form id=\\"search-cases\\" class=\\"inline-form\\" onsubmit=\\"return false;\\"><input class=\\"form-control mr-sm2\\" type=\\"search\\" placeholder=\\"Search\\" aria-label=\\"Search\\" name=\\"keywords\\"></form></div>
+<div class=\\"test-summary\\"><span class=\\"badge badge-light\\"><i class=\\"material-icons\\">access_alarms</i>
+ 
+<span id=\\"browser-total-time\\"></span></span>
+<span class=\\"badge badge-light\\" title=\\"Total\\"><i class=\\"material-icons\\">view_list</i>
+: 
+<span id=\\"browser-total-count\\"></span></span>
+<span class=\\"badge badge-success\\" title=\\"Success\\"><i class=\\"material-icons\\">check_circle</i>
+ 
+<span id=\\"browser-success-count\\"></span></span>
+<span class=\\"badge badge-danger\\" title=\\"Failed\\"><i class=\\"material-icons\\">error</i>
+<span id=\\"browser-error-count\\"></span></span>
+<span class=\\"badge badge-dark\\" title=\\"Skipped\\"><i class=\\"material-icons\\">highlight_off</i>
+ 
+<span id=\\"browser-skipped-count\\"></span></span></div></nav>
+<div class=\\"summaries-progress-bar\\"><div class=\\"progress\\" browser-id=\\"82275798\\"><div class=\\"progress-bar bg-success\\" style=\\"width:85.71%\\"></div>
+<div class=\\"progress-bar bg-danger\\" style=\\"width:14.29%\\"></div>
+<div class=\\"progress-bar bg-dark\\" style=\\"width:0%\\"></div></div>
+<div class=\\"progress\\" browser-id=\\"82275790\\"><div class=\\"progress-bar bg-success\\" style=\\"width:85.71%\\"></div>
+<div class=\\"progress-bar bg-danger\\" style=\\"width:14.29%\\"></div>
+<div class=\\"progress-bar bg-dark\\" style=\\"width:0%\\"></div></div></div>
+<div class=\\"suite-list\\" data-spy=\\"scroll\\"><div data-browser=\\"82275798\\"><div class=\\"suite-card-group\\"><div class=\\"card\\" id=\\"has-error-suite\\"><div class=\\"card-body\\"><div class=\\"card-header\\" data-toggle=\\"collapse\\" data-target=\\"#34e9d20ab\\" aria-expanded=\\"true\\" aria-controls=\\"collapseOne\\"><h5 class=\\"cart-title\\"><i class=\\"material-icons expand_less align-middle\\">expand_less</i>
+<i class=\\"material-icons expand_more align-middle\\">expand_more</i>
+<i class=\\"material-icons text-danger align-middle\\">error</i>
+Test example
+<span class=\\"show-case-total-time\\"><i class=\\"material-icons\\">access_alarm</i>
+ 
+3ms</span></h5></div>
+<div id=\\"34e9d20ab\\" class=\\"collapse show\\"><div class=\\"card-body\\"><div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">simplest test case</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+1ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">async test case</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+0ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">sinon fake</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+1ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">sinon spies</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+0ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">sinon mock</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+2ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-error\\"><div class=\\"alert alert-danger\\"><i class=\\"material-icons\\">error</i>
+<span class=\\"suite-case-desc\\">failure</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+1ms</span></div>
+<pre class=\\"suite-case-log\\">AssertionError: expected 1 to equal 2</pre><pre class=\\"suite-case-log\\">    at Context.<anonymous> (absolute/home/y1j2x34/Workspaces/lab/frontend-testing/__tests__/demo.spec.js?62a54a35c73ad922c1e2ae50fb1810c109dba9de:172:66)</pre>
+<div class=\\"suite-case-assertion-error\\"><span class=\\"suite-case-assertion-error-message text-danger\\">expected 1 to equal 2</span>
+<span class=\\"suite-case-assertion-error-actual text-danger\\">1</span>
+<span class=\\"suite-case-assertion-error-expected text-primary\\">2</span></div></div></div></div></div></div>
+<div class=\\"card\\" id=\\"\\"><div class=\\"card-body\\"><div class=\\"card-header\\" data-toggle=\\"collapse\\" data-target=\\"#34e9d20ab\\" aria-expanded=\\"true\\" aria-controls=\\"collapseOne\\"><h5 class=\\"cart-title\\"><i class=\\"material-icons expand_less align-middle\\">expand_less</i>
+<i class=\\"material-icons expand_more align-middle\\">expand_more</i>
+<i class=\\"material-icons text-success align-middle\\">check_circle</i>
+test2
+<span class=\\"show-case-total-time\\"><i class=\\"material-icons\\">access_alarm</i>
+ 
+0ms</span></h5></div>
+<div id=\\"34e9d20ab\\" class=\\"collapse show\\"><div class=\\"card-body\\"><div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">test2 parallel is Working</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+0ms</span></div>
+
+</div></div></div></div></div></div></div>
+<div data-browser=\\"82275790\\"><div class=\\"suite-card-group\\"><div class=\\"card\\" id=\\"has-error-suite\\"><div class=\\"card-body\\"><div class=\\"card-header\\" data-toggle=\\"collapse\\" data-target=\\"#34e9d20ab\\" aria-expanded=\\"true\\" aria-controls=\\"collapseOne\\"><h5 class=\\"cart-title\\"><i class=\\"material-icons expand_less align-middle\\">expand_less</i>
+<i class=\\"material-icons expand_more align-middle\\">expand_more</i>
+<i class=\\"material-icons text-danger align-middle\\">error</i>
+Test example
+<span class=\\"show-case-total-time\\"><i class=\\"material-icons\\">access_alarm</i>
+ 
+2ms</span></h5></div>
+<div id=\\"34e9d20ab\\" class=\\"collapse show\\"><div class=\\"card-body\\"><div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">simplest test case</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+1ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">async test case</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+0ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">sinon mock</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+2ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-error\\"><div class=\\"alert alert-danger\\"><i class=\\"material-icons\\">error</i>
+<span class=\\"suite-case-desc\\">failure</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+1ms</span></div>
+<pre class=\\"suite-case-log\\">AssertionError: expected 1 to equal 2</pre><pre class=\\"suite-case-log\\">    at Context.<anonymous> (absolute/home/y1j2x34/Workspaces/lab/frontend-testing/__tests__/demo.spec.js?62a54a35c73ad922c1e2ae50fb1810c109dba9de:172:66)</pre>
+<div class=\\"suite-case-assertion-error\\"><span class=\\"suite-case-assertion-error-message text-danger\\">expected 1 to equal 2</span>
+<span class=\\"suite-case-assertion-error-actual text-danger\\">1</span>
+<span class=\\"suite-case-assertion-error-expected text-primary\\">2</span></div></div></div></div></div></div>
+<div class=\\"card\\" id=\\"\\"><div class=\\"card-body\\"><div class=\\"card-header\\" data-toggle=\\"collapse\\" data-target=\\"#34e9d20ab\\" aria-expanded=\\"true\\" aria-controls=\\"collapseOne\\"><h5 class=\\"cart-title\\"><i class=\\"material-icons expand_less align-middle\\">expand_less</i>
+<i class=\\"material-icons expand_more align-middle\\">expand_more</i>
+<i class=\\"material-icons text-success align-middle\\">check_circle</i>
+Test example2
+<span class=\\"show-case-total-time\\"><i class=\\"material-icons\\">access_alarm</i>
+ 
+1ms</span></h5></div>
+<div id=\\"34e9d20ab\\" class=\\"collapse show\\"><div class=\\"card-body\\"><div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">sinon fake</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+1ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">sinon spies</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+0ms</span></div>
+
+</div></div></div></div></div>
+<div class=\\"card\\" id=\\"\\"><div class=\\"card-body\\"><div class=\\"card-header\\" data-toggle=\\"collapse\\" data-target=\\"#34e9d20ab\\" aria-expanded=\\"true\\" aria-controls=\\"collapseOne\\"><h5 class=\\"cart-title\\"><i class=\\"material-icons expand_less align-middle\\">expand_less</i>
+<i class=\\"material-icons expand_more align-middle\\">expand_more</i>
+<i class=\\"material-icons text-success align-middle\\">check_circle</i>
+test2
+<span class=\\"show-case-total-time\\"><i class=\\"material-icons\\">access_alarm</i>
+ 
+0ms</span></h5></div>
+<div id=\\"34e9d20ab\\" class=\\"collapse show\\"><div class=\\"card-body\\"><div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">test2 parallel is Working</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+0ms</span></div>
+
+</div></div></div></div></div>
+<div class=\\"card\\" id=\\"\\"><div class=\\"card-body\\"><div class=\\"card-header\\" data-toggle=\\"collapse\\" data-target=\\"#34e9d20ab\\" aria-expanded=\\"true\\" aria-controls=\\"collapseOne\\"><h5 class=\\"cart-title\\"><i class=\\"material-icons expand_less align-middle\\">expand_less</i>
+<i class=\\"material-icons expand_more align-middle\\">expand_more</i>
+<i class=\\"material-icons text-success align-middle\\">check_circle</i>
+test3
+<span class=\\"show-case-total-time\\"><i class=\\"material-icons\\">access_alarm</i>
+ 
+0ms</span></h5></div>
+<div id=\\"34e9d20ab\\" class=\\"collapse show\\"><div class=\\"card-body\\"><div class=\\"suite-case-item case-skipped\\"><div class=\\"alert alert-dark\\"><i class=\\"material-icons\\">highlight_off</i>
+<span class=\\"suite-case-desc\\">test3 parallel is Working</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+0ms</span></div>
+
+</div></div></div></div></div>
+<div class=\\"card\\" id=\\"\\"><div class=\\"card-body\\"><div class=\\"card-header\\" data-toggle=\\"collapse\\" data-target=\\"#34e9d20ab\\" aria-expanded=\\"true\\" aria-controls=\\"collapseOne\\"><h5 class=\\"cart-title\\"><i class=\\"material-icons expand_less align-middle\\">expand_less</i>
+<i class=\\"material-icons expand_more align-middle\\">expand_more</i>
+<i class=\\"material-icons text-success align-middle\\">check_circle</i>
+test4
+<span class=\\"show-case-total-time\\"><i class=\\"material-icons\\">access_alarm</i>
+ 
+0ms</span></h5></div>
+<div id=\\"34e9d20ab\\" class=\\"collapse show\\"><div class=\\"card-body\\"><div class=\\"suite-case-item case-pending\\"><div class=\\"alert alert-secondary\\"><i class=\\"material-icons\\">hourglass_empty</i>
+<span class=\\"suite-case-desc\\">test4 parallel is Working</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+0ms</span></div>
+
+</div></div></div></div></div></div></div></div></body>
+<script src=\\"https://code.jquery.com/jquery-3.2.1.slim.min.js\\" integrity=\\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\\" crossorigin=\\"anonymous\\"></script><script src=\\"https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js\\" integrity=\\"sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U\\" crossorigin=\\"anonymous\\"></script><script src=\\"https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js\\" integrity=\\"sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9\\" crossorigin=\\"anonymous\\"></script><script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script><script>var karmaResults = 
+[{\\"browser\\":{\\"id\\":\\"82275798\\",\\"fullName\\":\\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/87.0.4280.88 Safari/537.36\\",\\"name\\":\\"HeadlessChrome 87.0.4280 (Linux 0.0.0)\\",\\"state\\":\\"DISCONNECTED\\",\\"lastResult\\":{\\"startTime\\":1611677505999,\\"total\\":7,\\"success\\":6,\\"failed\\":1,\\"skipped\\":0,\\"totalTime\\":60000003,\\"netTime\\":3,\\"error\\":false,\\"disconnected\\":false,\\"totalTimeStr\\":\\"14203822251h\\"},\\"disconnectsCount\\":0,\\"noActivityTimeout\\":30000,\\"disconnectDelay\\":2000},\\"errors\\":[],\\"results\\":[{\\"id\\":\\"\\",\\"description\\":\\"simplest test case\\",\\"suite\\":[\\"Test example\\"],\\"success\\":true,\\"skipped\\":false,\\"pending\\":false,\\"time\\":0,\\"log\\":[],\\"assertionErrors\\":[],\\"startTime\\":1611677505991,\\"endTime\\":1611677505992},{\\"id\\":\\"\\",\\"description\\":\\"async test case\\",\\"suite\\":[\\"Test example\\"],\\"success\\":true,\\"skipped\\":false,\\"pending\\":false,\\"time\\":0,\\"log\\":[],\\"assertionErrors\\":[],\\"startTime\\":1611677505992,\\"endTime\\":1611677505992},{\\"id\\":\\"\\",\\"description\\":\\"sinon fake\\",\\"suite\\":[\\"Test example\\"],\\"success\\":true,\\"skipped\\":false,\\"pending\\":false,\\"time\\":1,\\"log\\":[],\\"assertionErrors\\":[],\\"startTime\\":1611677505993,\\"endTime\\":1611677505994},{\\"id\\":\\"\\",\\"description\\":\\"sinon spies\\",\\"suite\\":[\\"Test example\\"],\\"success\\":true,\\"skipped\\":false,\\"pending\\":false,\\"time\\":0,\\"log\\":[],\\"assertionErrors\\":[],\\"startTime\\":1611677505994,\\"endTime\\":1611677505994},{\\"id\\":\\"\\",\\"description\\":\\"sinon mock\\",\\"suite\\":[\\"Test example\\"],\\"success\\":true,\\"skipped\\":false,\\"pending\\":false,\\"time\\":2,\\"log\\":[],\\"assertionErrors\\":[],\\"startTime\\":1611677505994,\\"endTime\\":1611677505996},{\\"id\\":\\"\\",\\"description\\":\\"failure\\",\\"suite\\":[\\"Test example\\"],\\"success\\":false,\\"skipped\\":false,\\"pending\\":false,\\"time\\":0,\\"log\\":[\\"AssertionError: expected 1 to equal 2\\",\\"    at Context.<anonymous> (absolute/home/y1j2x34/Workspaces/lab/frontend-testing/__tests__/demo.spec.js?62a54a35c73ad922c1e2ae50fb1810c109dba9de:172:66)\\"],\\"assertionErrors\\":[{\\"name\\":\\"AssertionError\\",\\"message\\":\\"expected 1 to equal 2\\",\\"showDiff\\":true,\\"actual\\":\\"1\\",\\"expected\\":\\"2\\"}],\\"startTime\\":1611677505996,\\"endTime\\":1611677505997},{\\"id\\":\\"\\",\\"description\\":\\"test2 parallel is Working\\",\\"suite\\":[\\"test2\\"],\\"success\\":true,\\"skipped\\":false,\\"pending\\":false,\\"time\\":0,\\"log\\":[],\\"assertionErrors\\":[],\\"startTime\\":1611677505997,\\"endTime\\":1611677505997}]},{\\"browser\\":{\\"id\\":\\"82275790\\",\\"fullName\\":\\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/87.0.4280.88 Safari/537.36\\",\\"name\\":\\"Chrome 87.0.4280 (Linux 0.0.0)\\",\\"state\\":\\"DISCONNECTED\\",\\"lastResult\\":{\\"startTime\\":1611677505999,\\"total\\":7,\\"success\\":6,\\"failed\\":1,\\"skipped\\":0,\\"totalTime\\":6,\\"netTime\\":3,\\"error\\":false,\\"disconnected\\":false,\\"totalTimeStr\\":\\"6ms\\"},\\"disconnectsCount\\":0,\\"noActivityTimeout\\":30000,\\"disconnectDelay\\":2000},\\"errors\\":[],\\"results\\":[{\\"id\\":\\"\\",\\"description\\":\\"simplest test case\\",\\"suite\\":[\\"Test example\\"],\\"success\\":true,\\"skipped\\":false,\\"pending\\":false,\\"time\\":0,\\"log\\":[],\\"assertionErrors\\":[],\\"startTime\\":1611677505991,\\"endTime\\":1611677505992},{\\"id\\":\\"\\",\\"description\\":\\"async test case\\",\\"suite\\":[\\"Test example\\"],\\"success\\":true,\\"skipped\\":false,\\"pending\\":false,\\"time\\":0,\\"log\\":[],\\"assertionErrors\\":[],\\"startTime\\":1611677505992,\\"endTime\\":1611677505992},{\\"id\\":\\"\\",\\"description\\":\\"sinon fake\\",\\"suite\\":[\\"Test example2\\"],\\"success\\":true,\\"skipped\\":false,\\"pending\\":false,\\"time\\":1,\\"log\\":[],\\"assertionErrors\\":[],\\"startTime\\":1611677505993,\\"endTime\\":1611677505994},{\\"id\\":\\"\\",\\"description\\":\\"sinon spies\\",\\"suite\\":[\\"Test example2\\"],\\"success\\":true,\\"skipped\\":false,\\"pending\\":false,\\"time\\":0,\\"log\\":[],\\"assertionErrors\\":[],\\"startTime\\":1611677505994,\\"endTime\\":1611677505994},{\\"id\\":\\"\\",\\"description\\":\\"sinon mock\\",\\"suite\\":[\\"Test example\\"],\\"success\\":true,\\"skipped\\":false,\\"pending\\":false,\\"time\\":2,\\"log\\":[],\\"assertionErrors\\":[],\\"startTime\\":1611677505994,\\"endTime\\":1611677505996},{\\"id\\":\\"\\",\\"description\\":\\"failure\\",\\"suite\\":[\\"Test example\\"],\\"success\\":false,\\"skipped\\":false,\\"pending\\":false,\\"time\\":0,\\"log\\":[\\"AssertionError: expected 1 to equal 2\\",\\"    at Context.<anonymous> (absolute/home/y1j2x34/Workspaces/lab/frontend-testing/__tests__/demo.spec.js?62a54a35c73ad922c1e2ae50fb1810c109dba9de:172:66)\\"],\\"assertionErrors\\":[{\\"name\\":\\"AssertionError\\",\\"message\\":\\"expected 1 to equal 2\\",\\"showDiff\\":true,\\"actual\\":\\"1\\",\\"expected\\":\\"2\\"}],\\"startTime\\":1611677505996,\\"endTime\\":1611677505997},{\\"id\\":\\"\\",\\"description\\":\\"test2 parallel is Working\\",\\"suite\\":[\\"test2\\"],\\"success\\":true,\\"skipped\\":false,\\"pending\\":false,\\"time\\":0,\\"log\\":[],\\"assertionErrors\\":[],\\"startTime\\":1611677505997,\\"endTime\\":1611677505997},{\\"id\\":\\"\\",\\"description\\":\\"test3 parallel is Working\\",\\"suite\\":[\\"test3\\"],\\"success\\":false,\\"skipped\\":true,\\"pending\\":false,\\"time\\":0,\\"log\\":[],\\"assertionErrors\\":[],\\"startTime\\":1611677505997,\\"endTime\\":1611677505997},{\\"id\\":\\"\\",\\"description\\":\\"test4 parallel is Working\\",\\"suite\\":[\\"test4\\"],\\"success\\":false,\\"skipped\\":false,\\"pending\\":true,\\"time\\":0,\\"log\\":[],\\"assertionErrors\\":[],\\"startTime\\":1611677505997,\\"endTime\\":1611677505997}]}]
+; var focusOnFailures=
+false
+;</script><script>var menus = document.querySelectorAll('.switch-browser-menu-item');
+
+var defaultBrowserId = karmaResults[0].browser.id;
+
+var defaultMenu = Array.from(menus).find(it => {
+    return it.getAttribute('menu-browser') === defaultBrowserId;
+});
+
+defaultMenu.classList.add('selected');
+var last = defaultMenu;
+
+menus.forEach(function (menu, i) {
+    var browserId = karmaResults[i].browser.id;
+    menu.onclick = function () {
+        last.classList.remove('selected');
+        menu.classList.add('selected');
+        last = menu;
+        updateUI(browserId);
+    };
+});
+
+var totalTimeElm = document.getElementById('browser-total-time');
+var totalCountElm = document.getElementById('browser-total-count');
+var successCountElm = document.getElementById('browser-success-count');
+var errorCountElm = document.getElementById('browser-error-count');
+var skippedCountElm = document.getElementById('browser-skipped-count');
+
+function updateUI(browserId) {
+    var browserResult = karmaResults.find(it => it.browser.id === browserId);
+    if (!browserResult) {
+        return;
+    }
+    karmaResults
+        .filter(it => it.browser.id !== browserId)
+        .forEach(function (result) {
+            var otherBrowserId = result.browser.id;
+            var elms = document.querySelectorAll('[data-browser=\\"' + otherBrowserId + '\\"]');
+            elms.forEach(function (elm) {
+                elm.classList.add('hide-browser-result');
+            });
+        });
+
+    var elms = document.querySelectorAll('[data-browser=\\"' + browserId + '\\"]');
+    elms.forEach(function (elm) {
+        elm.classList.remove('hide-browser-result');
+    });
+    var browserLastResult = browserResult.browser.lastResult;
+    totalTimeElm.innerText = browserLastResult.totalTimeStr;
+    totalCountElm.innerText = browserLastResult.total;
+    successCountElm.innerText = browserLastResult.success;
+    errorCountElm.innerText = browserLastResult.failed;
+    skippedCountElm.innerText = browserLastResult.skipped;
+}
+
+updateUI(defaultBrowserId);
+
+if (focusOnFailures) {
+    var errorSuites = document.querySelectorAll('#has-error-suite');
+    if (errorSuites.length > 0) {
+        for (var i = 0; i < errorSuites.length; i++) {
+            var errorElm = errorSuites[i];
+            errorElm.id = errorElm.id + '-' + i;
+            if (errorElm.getClientRects().length > 0) {
+                location.hash = errorElm.id;
+                break;
+            }
+        }
+    }
+}
+
+var form = $('#search-cases');
+form.on('submit', function () {
+    var keywords = form.serializeArray()[0].value.split(/s+/);
+    console.info(keywords);
+    $('.suite-card-group .card').each(function (i, card) {
+        var items = $(card).find('.suite-case-item');
+        var matches = 0;
+        $(card).removeClass('jtex-search-not-match');
+        items.removeClass('jtex-search-not-match');
+        items.each(function (j, item) {
+            var desc = $(item).find('.suite-case-desc').text();
+            var found = keywords.some(it => desc.indexOf(it) > -1);
+            if (found) {
+                matches++;
+            } else {
+                $(item).addClass('jtex-search-not-match');
+            }
+        });
+        if (matches === 0) {
+            $(card).addClass('jtex-search-not-match');
+        }
+    });
+});
+</script></html>"
+`;

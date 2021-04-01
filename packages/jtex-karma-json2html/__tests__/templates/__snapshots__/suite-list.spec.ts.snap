@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render suite list correctly 1`] = `
+"<div class=\\"suite-list\\" data-spy=\\"scroll\\"><div data-browser=\\"82275798\\"><div class=\\"suite-card-group\\"><div class=\\"card\\" id=\\"has-error-suite\\"><div class=\\"card-body\\"><div class=\\"card-header\\" data-toggle=\\"collapse\\" data-target=\\"#34e9d20ab\\" aria-expanded=\\"true\\" aria-controls=\\"collapseOne\\"><h5 class=\\"cart-title\\"><i class=\\"material-icons expand_less align-middle\\">expand_less</i>
+<i class=\\"material-icons expand_more align-middle\\">expand_more</i>
+<i class=\\"material-icons text-danger align-middle\\">error</i>
+Test example
+<span class=\\"show-case-total-time\\"><i class=\\"material-icons\\">access_alarm</i>
+ 
+3ms</span></h5></div>
+<div id=\\"34e9d20ab\\" class=\\"collapse show\\"><div class=\\"card-body\\"><div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">simplest test case</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+1ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">async test case</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+0ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">sinon fake</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+1ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">sinon spies</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+0ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">sinon mock</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+2ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-error\\"><div class=\\"alert alert-danger\\"><i class=\\"material-icons\\">error</i>
+<span class=\\"suite-case-desc\\">failure</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+1ms</span></div>
+<pre class=\\"suite-case-log\\">AssertionError: expected 1 to equal 2</pre><pre class=\\"suite-case-log\\">    at Context.<anonymous> (absolute/home/y1j2x34/Workspaces/lab/frontend-testing/__tests__/demo.spec.js?62a54a35c73ad922c1e2ae50fb1810c109dba9de:172:66)</pre>
+<div class=\\"suite-case-assertion-error\\"><span class=\\"suite-case-assertion-error-message text-danger\\">expected 1 to equal 2</span>
+<span class=\\"suite-case-assertion-error-actual text-danger\\">1</span>
+<span class=\\"suite-case-assertion-error-expected text-primary\\">2</span></div></div></div></div></div></div>
+<div class=\\"card\\" id=\\"\\"><div class=\\"card-body\\"><div class=\\"card-header\\" data-toggle=\\"collapse\\" data-target=\\"#34e9d20ab\\" aria-expanded=\\"true\\" aria-controls=\\"collapseOne\\"><h5 class=\\"cart-title\\"><i class=\\"material-icons expand_less align-middle\\">expand_less</i>
+<i class=\\"material-icons expand_more align-middle\\">expand_more</i>
+<i class=\\"material-icons text-success align-middle\\">check_circle</i>
+test2
+<span class=\\"show-case-total-time\\"><i class=\\"material-icons\\">access_alarm</i>
+ 
+0ms</span></h5></div>
+<div id=\\"34e9d20ab\\" class=\\"collapse show\\"><div class=\\"card-body\\"><div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">test2 parallel is Working</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+0ms</span></div>
+
+</div></div></div></div></div></div></div>
+<div data-browser=\\"82275790\\"><div class=\\"suite-card-group\\"><div class=\\"card\\" id=\\"has-error-suite\\"><div class=\\"card-body\\"><div class=\\"card-header\\" data-toggle=\\"collapse\\" data-target=\\"#34e9d20ab\\" aria-expanded=\\"true\\" aria-controls=\\"collapseOne\\"><h5 class=\\"cart-title\\"><i class=\\"material-icons expand_less align-middle\\">expand_less</i>
+<i class=\\"material-icons expand_more align-middle\\">expand_more</i>
+<i class=\\"material-icons text-danger align-middle\\">error</i>
+Test example
+<span class=\\"show-case-total-time\\"><i class=\\"material-icons\\">access_alarm</i>
+ 
+2ms</span></h5></div>
+<div id=\\"34e9d20ab\\" class=\\"collapse show\\"><div class=\\"card-body\\"><div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">simplest test case</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+1ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">async test case</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+0ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">sinon mock</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+2ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-error\\"><div class=\\"alert alert-danger\\"><i class=\\"material-icons\\">error</i>
+<span class=\\"suite-case-desc\\">failure</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+1ms</span></div>
+<pre class=\\"suite-case-log\\">AssertionError: expected 1 to equal 2</pre><pre class=\\"suite-case-log\\">    at Context.<anonymous> (absolute/home/y1j2x34/Workspaces/lab/frontend-testing/__tests__/demo.spec.js?62a54a35c73ad922c1e2ae50fb1810c109dba9de:172:66)</pre>
+<div class=\\"suite-case-assertion-error\\"><span class=\\"suite-case-assertion-error-message text-danger\\">expected 1 to equal 2</span>
+<span class=\\"suite-case-assertion-error-actual text-danger\\">1</span>
+<span class=\\"suite-case-assertion-error-expected text-primary\\">2</span></div></div></div></div></div></div>
+<div class=\\"card\\" id=\\"\\"><div class=\\"card-body\\"><div class=\\"card-header\\" data-toggle=\\"collapse\\" data-target=\\"#34e9d20ab\\" aria-expanded=\\"true\\" aria-controls=\\"collapseOne\\"><h5 class=\\"cart-title\\"><i class=\\"material-icons expand_less align-middle\\">expand_less</i>
+<i class=\\"material-icons expand_more align-middle\\">expand_more</i>
+<i class=\\"material-icons text-success align-middle\\">check_circle</i>
+Test example2
+<span class=\\"show-case-total-time\\"><i class=\\"material-icons\\">access_alarm</i>
+ 
+1ms</span></h5></div>
+<div id=\\"34e9d20ab\\" class=\\"collapse show\\"><div class=\\"card-body\\"><div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">sinon fake</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+1ms</span></div>
+
+</div>
+<div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">sinon spies</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+0ms</span></div>
+
+</div></div></div></div></div>
+<div class=\\"card\\" id=\\"\\"><div class=\\"card-body\\"><div class=\\"card-header\\" data-toggle=\\"collapse\\" data-target=\\"#34e9d20ab\\" aria-expanded=\\"true\\" aria-controls=\\"collapseOne\\"><h5 class=\\"cart-title\\"><i class=\\"material-icons expand_less align-middle\\">expand_less</i>
+<i class=\\"material-icons expand_more align-middle\\">expand_more</i>
+<i class=\\"material-icons text-success align-middle\\">check_circle</i>
+test2
+<span class=\\"show-case-total-time\\"><i class=\\"material-icons\\">access_alarm</i>
+ 
+0ms</span></h5></div>
+<div id=\\"34e9d20ab\\" class=\\"collapse show\\"><div class=\\"card-body\\"><div class=\\"suite-case-item case-success\\"><div class=\\"alert alert-success\\"><i class=\\"material-icons\\">check_circle</i>
+<span class=\\"suite-case-desc\\">test2 parallel is Working</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+0ms</span></div>
+
+</div></div></div></div></div>
+<div class=\\"card\\" id=\\"\\"><div class=\\"card-body\\"><div class=\\"card-header\\" data-toggle=\\"collapse\\" data-target=\\"#34e9d20ab\\" aria-expanded=\\"true\\" aria-controls=\\"collapseOne\\"><h5 class=\\"cart-title\\"><i class=\\"material-icons expand_less align-middle\\">expand_less</i>
+<i class=\\"material-icons expand_more align-middle\\">expand_more</i>
+<i class=\\"material-icons text-success align-middle\\">check_circle</i>
+test3
+<span class=\\"show-case-total-time\\"><i class=\\"material-icons\\">access_alarm</i>
+ 
+0ms</span></h5></div>
+<div id=\\"34e9d20ab\\" class=\\"collapse show\\"><div class=\\"card-body\\"><div class=\\"suite-case-item case-skipped\\"><div class=\\"alert alert-dark\\"><i class=\\"material-icons\\">highlight_off</i>
+<span class=\\"suite-case-desc\\">test3 parallel is Working</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+0ms</span></div>
+
+</div></div></div></div></div>
+<div class=\\"card\\" id=\\"\\"><div class=\\"card-body\\"><div class=\\"card-header\\" data-toggle=\\"collapse\\" data-target=\\"#34e9d20ab\\" aria-expanded=\\"true\\" aria-controls=\\"collapseOne\\"><h5 class=\\"cart-title\\"><i class=\\"material-icons expand_less align-middle\\">expand_less</i>
+<i class=\\"material-icons expand_more align-middle\\">expand_more</i>
+<i class=\\"material-icons text-success align-middle\\">check_circle</i>
+test4
+<span class=\\"show-case-total-time\\"><i class=\\"material-icons\\">access_alarm</i>
+ 
+0ms</span></h5></div>
+<div id=\\"34e9d20ab\\" class=\\"collapse show\\"><div class=\\"card-body\\"><div class=\\"suite-case-item case-pending\\"><div class=\\"alert alert-secondary\\"><i class=\\"material-icons\\">hourglass_empty</i>
+<span class=\\"suite-case-desc\\">test4 parallel is Working</span>
+<span class=\\"suite-case-time\\"><i class=\\"material-icons\\">update</i>
+0ms</span></div>
+
+</div></div></div></div></div></div></div></div>"
+`;

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render progressbar correctly 1`] = `
+"<div class=\\"summaries-progress-bar\\"><div class=\\"progress\\" browser-id=\\"82275798\\"><div class=\\"progress-bar bg-success\\" style=\\"width:85.71%\\"></div>
+<div class=\\"progress-bar bg-danger\\" style=\\"width:14.29%\\"></div>
+<div class=\\"progress-bar bg-dark\\" style=\\"width:0%\\"></div></div>
+<div class=\\"progress\\" browser-id=\\"82275790\\"><div class=\\"progress-bar bg-success\\" style=\\"width:85.71%\\"></div>
+<div class=\\"progress-bar bg-danger\\" style=\\"width:14.29%\\"></div>
+<div class=\\"progress-bar bg-dark\\" style=\\"width:0%\\"></div></div></div>"
+`;
