@@ -16,6 +16,7 @@ module.exports = {
     testMatch: [path.resolve(__dirname, '__tests__/**/*.spec.ts')],
     collectCoverage: true,
     collectCoverageFrom: ['src/**/*.{ts,tsx}', '!**/node_modules/**'],
+    coveragePathIgnorePatterns: ['src/debug.ts'],
     coverageDirectory: './report/coverage',
     coverageReporters: ['cobertura', 'html', 'text-summary'],
     reporters: [
