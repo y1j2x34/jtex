@@ -14,4 +14,4 @@ describe('isNotDefined', () => {
         expect(isNotDefined([[]])).toBeFalsy();
         expect(isNotDefined({})).toBeFalsy();
     });
-})
+});
