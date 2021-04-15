@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "api": "yarn workspace @jtex/api",
-    "chrome-extension": "yarn workspace @jtex/chrome-extesion",
+    "web-extension": "yarn workspace @jtex/web-extension",
     "karma-json2html": "yarn workspace @jtex/karma-json2html",
     "karma-plugin": "yarn workspace @jtex/karma-plugin",
     "commit": "commit"
