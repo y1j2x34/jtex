@@ -1,7 +1,7 @@
 export default class Defer<T = any> {
     public readonly promise: Promise<T>;
     // tslint:disable-next-line:variable-name
-    private _resolve!: (value?: T | PromiseLike<T>) => void;
+    private _resolve!: (value: T | PromiseLike<T>) => void;
     // tslint:disable-next-line:variable-name
     private _reject!: (reson?: any) => void;
     constructor() {

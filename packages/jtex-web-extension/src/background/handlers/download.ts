@@ -1,3 +1,4 @@
+import browser from 'webextension-polyfill';
 import { TypedArray } from 'txon/types';
 import { ActionOption } from './types';
 
@@ -33,16 +34,16 @@ export function download(options: DownloadOption) {
     }
 
     return new Promise(resolve => {
-        chrome.downloads.onDeterminingFilename.addListener(function listener(
-            downloadItem: chrome.downloads.DownloadItem,
-            suggest: (suggestion?: chrome.downloads.DownloadFilenameSuggestion) => void
+        browser.downloads.onDeterminingFilename.addListener(function listener(
+            downloadItem: browser.downloads.DownloadItem,
+            suggest: (suggestion?: browser.downloads.DownloadFilenameSuggestion) => void
         ) {
             suggest({
                 filename: filename || downloadItem.filename
             });
-            chrome.downloads.onDeterminingFilename.removeListener(listener);
+            browser.downloads.onDeterminingFilename.removeListener(listener);
         });
-        chrome.downloads.download(
+        browser.downloads.download(
             {
                 url,
                 filename,

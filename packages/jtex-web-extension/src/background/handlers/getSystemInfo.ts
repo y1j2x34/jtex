@@ -1,3 +1,4 @@
+import browser from 'webextension-polyfill';
 import Defer from '../../common/defer';
 import { ActionOption } from './types';
 
@@ -21,9 +22,9 @@ function promisify<T extends FunctionPassingCallback, R = CallbackParameter<T>>(
 }
 
 export function getSystemInfo(_: ActionOption) {
-    const memory = chrome.system.memory;
-    const storage = chrome.system.storage;
-    const cpu = chrome.system.cpu;
+    const memory = browser.rsystem.memory;
+    const storage = browser.system.storage;
+    const cpu = browser.system.cpu;
     return Promise.all([
         promisify<typeof cpu.getInfo>(cpu.getInfo, cpu)(),
         promisify<typeof memory.getInfo>(memory.getInfo, memory)(),

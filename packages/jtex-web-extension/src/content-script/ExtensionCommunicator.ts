@@ -1,3 +1,4 @@
+import browser from 'webextension-polyfill';
 import TXON from 'txon';
 import Defer from '../common/defer';
 
@@ -7,12 +8,12 @@ const messageIdGenerator = (() => {
 })();
 
 export default class ExtensionCommunicator {
-    private port: chrome.runtime.Port;
+    private port: browser.runtime.Port;
     private defers: {
         [msgId: string]: Defer;
     } = {};
     constructor(private name: string) {
-        this.port = chrome.runtime.connect({ name });
+        this.port = browser.runtime.connect({ name });
         this.port.onMessage.addListener(message => {
             const msg = TXON.parse(message);
             const defer = this.defers[msg.msgId];

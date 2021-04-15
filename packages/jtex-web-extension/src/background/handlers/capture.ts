@@ -1,3 +1,4 @@
+import browser from 'webextension-polyfill';
 import { ActionOption } from './types';
 
 export enum CaptureDataFormat {
@@ -33,7 +34,7 @@ export interface ImageData {
 export function capture(options: CaptureOption): Promise<ImageData> {
     const { windowId, format = CaptureDataFormat.DATAURL } = options;
     return new Promise((resolve, reject) => {
-        chrome.tabs.captureVisibleTab(windowId, { format: 'png' }, imageURL => {
+        browser.tabs.captureVisibleTab(windowId, { format: 'png' }, imageURL => {
             const img = new Image();
             img.onload = () => {
                 const bounding = options.bounding;

@@ -1,8 +1,9 @@
+import browser from 'webextension-polyfill';
 import TXON from 'txon';
 import { COMMUNICATOR_ID } from '../common/consts';
 import * as actionHandlers from './handlers';
 
-chrome.runtime.onConnect.addListener(port => {
+browser.runtime.onConnect.addListener(port => {
     console.assert(port.name === COMMUNICATOR_ID);
     port.onMessage.addListener(msg => {
         const parsedMsg = TXON.parse(msg);
