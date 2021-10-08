@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
     preset: 'ts-jest',
     transform: {
-        '^.+\\.(txt|css)$': 'jest-text-transformer'
+        '^.+\\.(txt|css)$': '@jtex/jest-text-transformer'
     },
     globals: {
         'ts-jest': {
