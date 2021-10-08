@@ -16,9 +16,13 @@
     "husky": "^4.3.8",
     "lerna": "^3.22.1"
   },
-  "workspaces": [
-    "./packages/*"
-  ],
+  "workspaces": {
+      "packages": [
+        "./packages/*",
+        "./devtools/*"
+      ],
+      "nohoist": []
+  },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
