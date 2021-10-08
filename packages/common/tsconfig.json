@@ -3,23 +3,23 @@
         "module": "esnext",
         "moduleResolution": "node",
         "target": "es5",
-        "lib": ["esnext"],
+        "lib": ["ESNext", "DOM"],
         "strict": true,
-        "noImplicitAny": false,
+        "noImplicitAny": true,
         "noUnusedLocals": true,
         "alwaysStrict": true,
         "preserveConstEnums": true,
         "removeComments": false,
         "sourceMap": true,
-        "importHelpers": true,
-        "listFiles": true,
+        "importHelpers": false,
         "forceConsistentCasingInFileNames": true,
         "esModuleInterop": true,
         "experimentalDecorators": true,
-        "typeRoots": [
-            "node_modules/@types",
-            "src/types"
-        ]
+        "declaration": true,
+        "declarationDir": "./lib",
+        "outDir": "./lib",
+        "resolveJsonModule": true,
+        "skipLibCheck": true
     },
-    "include": ["src/**/*"]
+    "include": ["./src"]
 }

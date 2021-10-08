@@ -61,5 +61,7 @@
     "webpack-cli": "^3.3.11",
     "webpack-merge": "^5.2.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@jtex/common": "^1.0.0"
+  }
 }

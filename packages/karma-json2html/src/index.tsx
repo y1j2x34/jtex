@@ -1,5 +1,5 @@
 import * as elements from 'typed-html';
-import { JSONReportData } from '../../../common/jtex-karma-json-report-core';
+import { JSONReportData } from '@jtex/common';
 import { generateHeader } from './header';
 import { navbar } from './navbar';
 import { progressbar } from './progressbar';

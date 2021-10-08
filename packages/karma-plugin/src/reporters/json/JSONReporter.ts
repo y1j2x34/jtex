@@ -1,6 +1,6 @@
 import path from 'path';
 import fs from 'fs';
-import { BrowserStats, JSONReportData } from '../../../../../common/jtex-karma-json-report-core';
+import { BrowserStats, JSONReportData } from '@jtex/common';
 import { Writable } from 'stream';
 
 export {
@@ -11,7 +11,7 @@ export {
     BrowserInfo,
     TestSummary,
     BrowserStats
-} from '../../../../../common/jtex-karma-json-report-core';
+} from '@jtex/common';
 
 export interface JSONReporterConfig {
     output: string | Writable;

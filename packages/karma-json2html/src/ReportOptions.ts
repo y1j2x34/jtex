@@ -1,4 +1,4 @@
-import { JSONReportData } from '../../../common/jtex-karma-json-report-core';
+import { JSONReportData } from '@jtex/common';
 
 export interface I18NResource {
     [key: string]: string | I18NResource;

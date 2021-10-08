@@ -1,5 +1,5 @@
 import * as elements from 'typed-html';
-import { SuiteResultInfo, AssertionError } from '../../../common/jtex-karma-json-report-core';
+import { SuiteResultInfo, AssertionError } from '@jtex/common';
 import { ReportOptions } from './ReportOptions';
 import { formatTime } from './utils/formatTime';
 import { translater } from './utils/i18n';
