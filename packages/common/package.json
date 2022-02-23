@@ -6,6 +6,10 @@
   "scripts": {
     "build": "tsc"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",
