@@ -5,8 +5,7 @@
   "author": "y1j2x34 <y1j2x34@qq.com>",
   "homepage": "https://github.com/y1j2x34/jtex/tree/master/packages/karma-plugin#readme",
   "license": "MIT",
-  "main": "lib/index.cjs.js",
-  "module": "lib/index.esm.js",
+  "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "distDir": "lib",
   "keywords": [
@@ -18,7 +17,9 @@
     "html",
     "reporter",
     "awesome",
-    "karma"
+    "karma",
+    "karma-plugin",
+    "karma-reporter"
   ],
   "directories": {
     "lib": "lib",
