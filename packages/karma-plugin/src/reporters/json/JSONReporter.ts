@@ -1,7 +1,6 @@
 import path from 'path';
 import fs from 'fs';
 import { BrowserStats, JSONReportData } from '@jtex/common';
-import { Writable } from 'stream';
 
 export {
     JSONReportData,
@@ -14,7 +13,7 @@ export {
 } from '@jtex/common';
 
 export interface JSONReporterConfig {
-    output: string | Writable;
+    output: string | fs.WriteStream;
 }
 
 export interface LogInterface {
@@ -29,6 +28,7 @@ export class JSONReporter {
     }
     private browsers: Record<string, BrowserStats> = {};
     private log: LogInterface;
+    private fileWritingFinished = () => {};
 
     constructor(
         baseReporterDecorator: (reporter: JSONReporter) => void,
@@ -43,8 +43,8 @@ export class JSONReporter {
             this.log.warn('Invalid configuration: jtexReporter.json.output, it should be file path or fs.WriteStream');
         }
     }
-    private isValidOutputConfig(output: string | Writable): boolean {
-        return typeof output === 'string' || output instanceof Writable;
+    private isValidOutputConfig(output: string | fs.WriteStream): boolean {
+        return typeof output === 'string' || output instanceof fs.WriteStream;
     }
     clear() {
         this.browsers = {};
@@ -90,6 +90,7 @@ export class JSONReporter {
             const absolutePath = path.resolve(output);
             this.makeDir(absolutePath).then(() => {
                 fs.writeFile(absolutePath, text, err => {
+                    this.fileWritingFinished();
                     if (err) {
                         this.log.warn(`Cannot write test results to file\n\t${err.message}\n\t${err.stack}`);
                     } else {
@@ -97,7 +98,7 @@ export class JSONReporter {
                     }
                 });
             });
-        } else if (output instanceof Writable) {
+        } else {
             output.write(text);
         }
     }
@@ -111,4 +112,8 @@ export class JSONReporter {
     onBrowserError(browser, error) {
         this.getBrowser(browser.browserId, browser).errors.push(error);
     }
+    onExit(done) {
+        this.fileWritingFinished = done;
+    }
+
 }

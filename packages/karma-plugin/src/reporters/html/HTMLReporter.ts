@@ -1,9 +1,9 @@
-import { JSONReportData, JSONReporter } from '../json/JSONReporter';
-import { html } from '@jtex/karma-json2html';
-import { Writable } from 'stream';
+import {JSONReportData, JSONReporter} from '../json/JSONReporter';
+import {html} from '@jtex/karma-json2html';
+import fs from 'fs';
 
 export interface HTMLReporterConfig {
-    output: string | Writable;
+    output: string | fs.WriteStream;
     pageTitle: string;
     reportTitle: string;
     focusOnFailures: boolean;
