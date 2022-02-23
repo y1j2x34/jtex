@@ -1,5 +1,5 @@
 import { HTMLReporter } from './HTMLReporter';
 
 export default {
-    'reporter:jtex-json': ['type', HTMLReporter]
+    'reporter:jtex-html': ['type', HTMLReporter]
 };
