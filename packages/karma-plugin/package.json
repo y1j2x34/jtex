@@ -1,12 +1,13 @@
 {
   "name": "@jtex/karma-plugin",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha",
   "description": "jtex karma plugin",
   "author": "y1j2x34 <y1j2x34@qq.com>",
-  "homepage": "",
+  "homepage": "https://github.com/y1j2x34/jtex/tree/master/packages/karma-plugin#readme",
   "license": "MIT",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
+  "typings": "lib/index.d.ts",
   "distDir": "lib",
   "keywords": [
     "jtex",
@@ -20,8 +21,13 @@
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "doc-assets"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "scripts": {
     "lint": " eslint {src,__tests__,build}/**/*.ts",
     "format": "eslint {src,__tests__,build}/**/*.ts  --fix",
