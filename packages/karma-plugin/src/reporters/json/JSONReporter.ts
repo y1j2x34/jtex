@@ -13,7 +13,7 @@ export {
 } from '@jtex/common';
 
 export interface JSONReporterConfig {
-    output: string | fs.WriteStream;
+    outputFile: string | fs.WriteStream;
 }
 
 export interface LogInterface {
@@ -21,26 +21,30 @@ export interface LogInterface {
     error(message: string);
     debug(message: string);
 }
+interface PartialKarmaConfiguration {
+    basePath: string;
+}
 
 export class JSONReporter {
     static get $inject() {
-        return ['baseReporterDecorator', 'formatError', 'config.jtexReporter.json', 'helper', 'logger'];
+        return ['formatError', 'config', 'config.jtexReporter.json', 'helper', 'logger'];
     }
     private browsers: Record<string, BrowserStats> = {};
     private log: LogInterface;
     private fileWritingFinished = () => {};
 
     constructor(
-        baseReporterDecorator: (reporter: JSONReporter) => void,
         private formatError: (error: any) => string,
-        protected config: JSONReporterConfig,
+        protected karmaConfig: PartialKarmaConfiguration,
+        protected reporterConfig: JSONReporterConfig,
         private helper: any,
         loggerFactory: any
     ) {
-        baseReporterDecorator(this);
         this.log = loggerFactory.create('jtex-json-reporter') as LogInterface;
-        if (!config || !this.isValidOutputConfig(config.output)) {
-            this.log.warn('Invalid configuration: jtexReporter.json.output, it should be file path or fs.WriteStream');
+        this.karmaConfig.basePath = path.resolve( this.karmaConfig.basePath ||'.');
+
+        if (!reporterConfig || !this.isValidOutputConfig(reporterConfig.outputFile)) {
+            this.log.warn('Invalid configuration: jtexReporter.json.outputFile, it should be file path or fs.WriteStream');
         }
     }
     private isValidOutputConfig(output: string | fs.WriteStream): boolean {
@@ -85,9 +89,10 @@ export class JSONReporter {
         this.writeTextData(JSON.stringify(outputData));
     }
     writeTextData(text: string) {
-        const output = this.config.output;
+        const output = this.reporterConfig.outputFile;
         if (typeof output === 'string') {
-            const absolutePath = path.resolve(output);
+            const absolutePath = this.resolvePath(output);
+            this.helper.normalizeWinPath(absolutePath);
             this.makeDir(absolutePath).then(() => {
                 fs.writeFile(absolutePath, text, err => {
                     this.fileWritingFinished();
@@ -101,6 +106,18 @@ export class JSONReporter {
         } else {
             output.write(text);
         }
+    }
+    resolvePath(relativePath: string) {
+        const { helper, karmaConfig } = this;
+        if (helper.isUrlAbsolute(relativePath)) {
+            return relativePath;
+        }
+
+        if (!helper.isDefined(karmaConfig.basePath) || !helper.isDefined(relativePath)) {
+            return '';
+        }
+
+        return path.resolve(karmaConfig.basePath as string, relativePath);
     }
     makeDir(absolutePath) {
         return new Promise<void>(resolve => {

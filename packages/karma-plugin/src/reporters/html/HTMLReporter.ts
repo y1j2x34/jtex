@@ -3,7 +3,8 @@ import {html} from '@jtex/karma-json2html';
 import fs from 'fs';
 
 export interface HTMLReporterConfig {
-    output: string | fs.WriteStream;
+    outputFile: string | fs.WriteStream;
+    basePath?: string;
     pageTitle: string;
     reportTitle: string;
     focusOnFailures: boolean;
@@ -13,10 +14,10 @@ export interface HTMLReporterConfig {
 
 export class HTMLReporter extends JSONReporter {
     static get $inject() {
-        return ['baseReporterDecorator', 'formatError', 'config.jtexReporter.html', 'helper', 'logger'];
+        return ['formatError', 'config', 'config.jtexReporter.html', 'helper', 'logger'];
     }
     writeReportData(data: JSONReportData) {
-        const config = this.config as HTMLReporterConfig;
+        const config = this.reporterConfig as HTMLReporterConfig;
         const htmlStr = html({
             data,
             ...config
