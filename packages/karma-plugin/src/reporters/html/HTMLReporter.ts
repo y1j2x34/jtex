@@ -4,7 +4,6 @@ import fs from 'fs';
 
 export interface HTMLReporterConfig {
     outputFile: string | fs.WriteStream;
-    basePath?: string;
     pageTitle: string;
     reportTitle: string;
     focusOnFailures: boolean;
