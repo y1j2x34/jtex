@@ -39,7 +39,7 @@ module.exports = function(config) {
 
 ### `jtex-json` reporter
 
-`jtex-json` reporter Generates a JSOn report of the karma results.
+`jtex-json` reporter Generates a JSON report of the karma results.
 The results are very similar to the internal karma result objects. See below:
 
 ```json
@@ -109,7 +109,7 @@ The results are very similar to the internal karma result objects. See below:
     ],
     jtexReporter: {
         json: {
-            output: 'path/to/json-report-file.json'
+            outputFile: 'path/to/json-report-file.json'
         }
     }
 }
@@ -134,6 +134,7 @@ See also <https://npmjs.com/package/@jtex/karma-json2html>
     ],
     jtexReporter: {
         html: {
+            outputFile: 'path/to/jtex-html-file.html'
             reportTitle: 'jtex html report title',
             focusOnFailures: true,
             collapsed: true,
